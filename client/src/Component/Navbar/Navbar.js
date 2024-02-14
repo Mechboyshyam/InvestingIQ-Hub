@@ -5,9 +5,7 @@ export default class Navbar extends Component {
     return (
       <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="/">
-            InvestingIQ Hub
-          </a>
+          <span className="navbar-brand">InvestingIQ Hub</span>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,15 +21,17 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/">
                   Home <span className="sr-only">(current)</span>
                 </a>
               </li>
-              {/* <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li> */}
+              <li className="nav-item">
+                <a className="nav-link" href="/about">
+                  About
+                </a>
+              </li>
               <li className="nav-item dropdown">
-                <a
+                {/* <a
                   className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
@@ -40,9 +40,9 @@ export default class Navbar extends Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Dropdown
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  More
+                </a> */}
+                {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a className="dropdown-item" href="/about">
                     About
                   </a>
@@ -53,11 +53,13 @@ export default class Navbar extends Component {
                   <a className="dropdown-item" href="#">
                     Something else here
                   </a>
-                </div>
+                </div> */}
               </li>
               {/* <li className="nav-item">
-        <a className="nav-link disabled" href="#">Disabled</a>
-      </li> */}
+                <a className="nav-link disabled" href="#">
+                  Disabled
+                </a>
+              </li> */}
             </ul>
             <form className="form-inline my-2 my-lg-0">
               <input

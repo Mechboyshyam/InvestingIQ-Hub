@@ -3,7 +3,7 @@ import Navbar from "../../Component/Navbar/Navbar";
 function Home(){
     return(
         <div> 
-            <div><Navbar/>
+            <div><Navbar/> <hr/>
                 {/* 960472210000025 */}
             </div>
         </div>
