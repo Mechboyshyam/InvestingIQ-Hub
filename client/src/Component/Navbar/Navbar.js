@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Navbar.css';
 
 export default class Navbar extends Component {
   render() {
@@ -19,6 +20,7 @@ export default class Navbar extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="col-4">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
                 <a className="nav-link" href="/">
@@ -55,26 +57,34 @@ export default class Navbar extends Component {
                   </a>
                 </div> */}
               </li>
-              {/* <li className="nav-item">
-                <a className="nav-link disabled" href="#">
-                  Disabled
-                </a>
-              </li> */}
+              <li className="nav-item">
+                {/* <span className="nav-link text-center">
+                  Shyam Bhai...
+                </span> */}
+              </li>
             </ul>
-            <form className="form-inline my-2 my-lg-0">
+            </div>
+            <div className="col-4">
+              <span className="user-name">
+                Shyam Bhai...
+              </span>
+            </div>
+           <div className="col-4">
+           <form className="form-inline search-box my-2 my-lg-0">
               <input
                 className="form-control mr-sm-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button
+              {/* <button
                 className="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
               >
                 Search
-              </button>
+              </button> */}
             </form>
+           </div>
           </div>
         </nav>
       </>
