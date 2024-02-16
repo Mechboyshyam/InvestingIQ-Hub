@@ -4,3 +4,11 @@
     width: auto;
     height: auto;
 }
+
+.segment-flex{
+    display: flex;
+}
+
+.margin-segment{
+    margin-left: 40px;
+}
