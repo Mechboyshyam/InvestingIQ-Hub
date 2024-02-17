@@ -1,6 +1,7 @@
 .background {
   background-image: url(././Images/CompressJPEG.online_1366x768-image.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
+  background-attachment: fixed;
+  height: auto;
   width: 100vw;
 }
