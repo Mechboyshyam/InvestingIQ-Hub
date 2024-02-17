@@ -1,5 +1,6 @@
-.background{
-    /* background-image: url(./../src/Images/Banknifty-fullscreen.jpg); */
-    height: 100vh;
-    width: auto;
+.background {
+  background-image: url(././Images/CompressJPEG.online_1366x768-image.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 }

@@ -1,14 +1,10 @@
-.title{
-    border: 1px solid black;
-    padding-bottom: 5px;
-    width: auto;
-    height: auto;
+h2{
+    border: 5px solid white;
+    border-radius: 15px;
+    padding-bottom: 3px;
+    padding-left: 3px;
 }
-
-.segment-flex{
-    display: flex;
-}
-
-.margin-segment{
-    margin-left: 40px;
+ .formula{
+    border: 1px solid white;
+    padding: 0px 15px 3px 15px;
 }
