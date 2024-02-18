@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import './Navbar.css';
+import DateTime from "../Date/date";
 
 export default class Navbar extends Component {
   render() {
+   
     return (
       <>
-        <nav className="navbar navbar-expand-lg navbar-light  text-whit ">
+        <nav className="navbar navbar-expand-lg navbar-light  text-white ">
           <span className="navbar-brand  text-white">InvestingIQ Hub</span>
           <button
             className="navbar-toggler"
@@ -22,17 +24,17 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="col-4">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
+              <li className="nav-item active btn">
                 <a className="nav-link text-white" href="/">
                   Home <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li className="nav-item active">
+              <li className="nav-item active btn">
                 <a className="nav-link text-white" href="/blogs">
                   Blogs
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item btn">
                 <a className="nav-link text-white" href="/about">
                   About
                 </a>
@@ -70,8 +72,8 @@ export default class Navbar extends Component {
             </ul>
             </div>
             <div className="col-4">
-              <span className="user-name text-white">
-                Shyam Bhai...
+              <span className="btn btn-outline-success text-white">
+              <DateTime></DateTime>
               </span>
             </div>
            <div className="col-4">
@@ -79,15 +81,15 @@ export default class Navbar extends Component {
               <input
                 className="form-control mr-sm-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Search the content"
                 aria-label="Search"
               />
-              {/* <button
+              <button
                 className="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
               >
-                Search
-              </button> */}
+                Contact us
+              </button>
             </form>
            </div>
           </div>

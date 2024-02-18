@@ -23,7 +23,7 @@ export class Page1 extends PureComponent {
                 Investing in Stock Market from basic to advanace."
               </h4>
               <p>
-                Do you ever have que in your mind that who can invest? Is there
+                {'\t'} Do you ever have que in your mind that who can invest? Is there
                 any criteria for investing? How to invest? Few people say share
                 market is gambling, really? You will get all ans of the
                 questions listed here and also the questions in your mind.
