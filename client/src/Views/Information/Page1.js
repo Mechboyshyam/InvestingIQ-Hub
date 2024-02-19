@@ -10,20 +10,20 @@ export class Page1 extends PureComponent {
         <Navbar /> <hr />
         {/* this is the main container */}
         <div className="container">
-          <h2 className="text-light">
+          <h2 className="text-dark">
             Embarking on Your Financial Journey : A Beginner's Guide to Stock
             Market Success.
           </h2>
-          {/* making two dives here for the content and the information  */}.
-          <div className="d-flex text-white">
-            <div className="col-4 bg-dark">Content List</div>
-            <div className="col-8 bg-danger">
+          {/* making two dives here for the content and the information  */}  
+          <div className="d-flex">
+            <div className="col-4 text-center p-3">Content List</div>
+            <div className="col-8">
               <h4 className="text-center">
                 "Welcome to our learning platform. We are here to learn
                 Investing in Stock Market from basic to advanace."
               </h4>
               <p>
-                {"\t"} Do you ever have que in your mind that who can invest? Is
+                 Do you ever have que in your mind that who can invest? Is
                 there any criteria for investing? How to invest? Few people say
                 share market is gambling, really? You will get all ans of the
                 questions listed here and also the questions in your mind.

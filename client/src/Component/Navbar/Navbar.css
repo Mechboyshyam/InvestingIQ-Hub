@@ -3,6 +3,10 @@
     /* background: #000; */
 }
 
-.nav-font-color{
-    color: white ;      
+/* .nav-font-color{
+    color: black ;      
+} */
+
+.contact{
+    font-weight:bold ;
 }

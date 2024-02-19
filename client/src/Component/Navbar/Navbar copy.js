@@ -7,8 +7,8 @@ export default class Navbar extends Component {
    
     return (
       <>
-        <nav className="navbar navbar-expand-lg navbar-light sticky-top z-3 bg-light ">
-          <span className="navbar-brand ">InvestingIQ Hub</span>
+        <nav className="navbar navbar-expand-lg navbar-light  text-white ">
+          <span className="navbar-brand  text-white">InvestingIQ Hub</span>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,17 +25,17 @@ export default class Navbar extends Component {
             <div className="col-4">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active btn">
-                <a className="nav-link" href="/">
+                <a className="nav-link text-white" href="/">
                   Home <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item active btn">
-                <a className="nav-link" href="/blogs">
+                <a className="nav-link text-white" href="/blogs">
                   Blogs
                 </a>
               </li>
               <li className="nav-item btn">
-                <a className="nav-link" href="/about">
+                <a className="nav-link text-white" href="/about">
                   About
                 </a>
               </li>
@@ -72,7 +72,7 @@ export default class Navbar extends Component {
             </ul>
             </div>
             <div className="col-4">
-              <span className="btn btn-outline-success">
+              <span className="btn btn-outline-success text-white">
               <DateTime></DateTime>
               </span>
             </div>
@@ -85,7 +85,7 @@ export default class Navbar extends Component {
                 aria-label="Search"
               />
               <button
-                className="btn contact btn-outline-success my-2 my-sm-0"
+                className="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
               >
                 Contact us
