@@ -14,18 +14,24 @@ export class Page1 extends PureComponent {
             Embarking on Your Financial Journey : A Beginner's Guide to Stock
             Market Success.
           </h2>
-          {/* making two dives here for the content and the information  */}  
+          {/* making two dives here for the content and the information  */}
           <div className="d-flex">
-            <div className="col-4 text-center p-3">Content List</div>
+            <div className="col-4 text-center content p-3">Content List</div>
             <div className="col-8">
               <h4 className="text-center">
                 "Welcome to our learning platform. We are here to learn
                 Investing in Stock Market from basic to advanace."
               </h4>
               <p>
-                 Do you ever have que in your mind that who can invest? Is
-                there any criteria for investing? How to invest? Few people say
-                share market is gambling, really? You will get all ans of the
+                Most of the people have this que in their mind that 'When to
+                start the investing?' Once the wise man said start the investing
+                when you know about investing. There is no perticular age to
+                start the investing. So gain knowledge and after that start investing-
+              </p>
+              <p>
+                Do you ever have que in your mind that who can invest? Is there
+                any criteria for investing? How to invest? Few people say share
+                market is gambling, really? You will get all ans of the
                 questions listed here and also the questions in your mind.
               </p>{" "}
               <hr />
@@ -57,19 +63,28 @@ export class Page1 extends PureComponent {
                 selling of stocks occurs.
               </p>
               <p>
-              There is no restriction to invest, it can be small investor or big
-              mutual funds, FII and DII companies.
-              <ul>
-                <li>FII : Foreign Institutional Investor</li>
-                <li>DII : Domestic Institutional Investor</li>
-              </ul>
-              </p> <hr />
-
+                There is no restriction to invest, it can be small investor or
+                big mutual funds, FII and DII companies.
+                <ul>
+                  <li>FII : Foreign Institutional Investor</li>
+                  <li>DII : Domestic Institutional Investor</li>
+                </ul>
+              </p>{" "}
+              <hr />
               <span>
-                <b>Before investing you must have to know the benefits of these business:-</b>
+                <b>
+                  Before investing you must have to know the benefits of these
+                  business:-
+                </b>
                 <ol>
-                  <li>You will get more time, if you know very well about making profit. </li>
-                  <li>This business doesn't need proper place or office. You just need your Laptop or Mobile.</li>
+                  <li>
+                    You will get more time, if you know very well about making
+                    profit.{" "}
+                  </li>
+                  <li>
+                    This business doesn't need proper place or office. You just
+                    need your Laptop or Mobile.
+                  </li>
                 </ol>
               </span>
               {/* what is nse and bse */}
@@ -77,7 +92,8 @@ export class Page1 extends PureComponent {
                 <b>What is NSE and BSE?</b>
                 <ol>
                   <li>
-                    NSE : It is a nifty index. It contains 50 big market cap stocks, also called as NIFTY-50.
+                    NSE : It is a nifty index. It contains 50 big market cap
+                    stocks, also called as NIFTY-50.
                   </li>
                   <li>
                     BSE : BSE is a Sensex. It contain 30 big market cap stocks.

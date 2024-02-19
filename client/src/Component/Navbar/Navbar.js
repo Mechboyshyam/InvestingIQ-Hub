@@ -8,7 +8,7 @@ export default class Navbar extends Component {
     return (
       <>
         <nav className="navbar navbar-expand-lg navbar-light sticky-top z-3 bg-light ">
-          <span className="navbar-brand ">InvestingIQ Hub</span>
+          <span className="navbar-brand bold">InvestingIQ Hub</span>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,17 +24,17 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <div className="col-4">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active btn">
+              <li className="nav-item active btn bold">
                 <a className="nav-link" href="/">
                   Home <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li className="nav-item active btn">
+              <li className="nav-item active bold btn">
                 <a className="nav-link" href="/blogs">
                   Blogs
                 </a>
               </li>
-              <li className="nav-item btn">
+              <li className="nav-item active btn bold">
                 <a className="nav-link" href="/about">
                   About
                 </a>
@@ -72,20 +72,20 @@ export default class Navbar extends Component {
             </ul>
             </div>
             <div className="col-4">
-              <span className="btn btn-outline-success">
+              <span className="btn btn-outline-dark border-bold bold">
               <DateTime></DateTime>
               </span>
             </div>
-           <div className="col-4">
+           <div className="col-4 ">
            <form className="form-inline search-box my-2 my-lg-0">
               <input
-                className="form-control mr-sm-2"
+                className="form-control mr-sm-2 text-center border-bold"
                 type="search"
                 placeholder="Search the content"
                 aria-label="Search"
               />
               <button
-                className="btn contact btn-outline-success my-2 my-sm-0"
+                className="btn bold btn-outline-dark my-2 border-bold my-sm-0"
                 type="submit"
               >
                 Contact us

@@ -7,6 +7,14 @@
     color: black ;      
 } */
 
-.contact{
+.bold{
     font-weight:bold ;
 }
+
+.border-bold{
+    border: 1px solid black !important;
+}
+
+/* .content{
+    position: sticky ;
+} */

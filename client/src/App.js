@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-   <div>
+   <div className='background'>
     <BrowserRouter>
       <Routes>
       <Route path="/" element={< Home />} />
