@@ -7,7 +7,7 @@ export default class Navbar extends Component {
    
     return (
       <>
-        <nav className="navbar navbar-expand-lg navbar-light sticky-top z-3 bg-light ">
+        <nav className="navbar navbar-expand-lg navbar-dark sticky-top z-3 bg-teal ">
           <span className="navbar-brand bold">InvestingIQ Hub</span>
           <button
             className="navbar-toggler"

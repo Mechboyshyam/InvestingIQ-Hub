@@ -1,24 +1,26 @@
 import React, { PureComponent } from "react";
-import Navbar from "../../Component/Navbar/Navbar";
 import "./Page1.css";
 import Thinking from "./../../Images/thinking.jpeg";
 
 export class Page1 extends PureComponent {
   render() {
     return (
-      <div>
-        <Navbar /> <hr />
+      <div className="parent">
         {/* this is the main container */}
-        <div className="container">
-          <h2 className="text-dark">
-            Embarking on Your Financial Journey : A Beginner's Guide to Stock
-            Market Success.
-          </h2>
+        <div className="mt-2">
+          <h3 className="text-center title-design ">
+            "Embarking on Your Financial Journey : A Beginner's Guide to Stock
+            Market Success."
+          </h3>
+        </div>
+        <div>
           {/* making two dives here for the content and the information  */}
-          <div className="d-flex">
+          <div className="d-flex flex-box">
             <div className="col-4 text-center content p-3">Content List</div>
-            <div className="col-8">
+            <div className="col-8 blog">
               <h4 className="text-center">
+                {" "}
+                <br />
                 "Welcome to our learning platform. We are here to learn
                 Investing in Stock Market from basic to advanace."
               </h4>
@@ -26,7 +28,8 @@ export class Page1 extends PureComponent {
                 Most of the people have this que in their mind that 'When to
                 start the investing?' Once the wise man said start the investing
                 when you know about investing. There is no perticular age to
-                start the investing. So gain knowledge and after that start investing-
+                start the investing. So gain knowledge and after that start
+                investing-
               </p>
               <p>
                 Do you ever have que in your mind that who can invest? Is there

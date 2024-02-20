@@ -3,6 +3,10 @@
     /* background: #000; */
 }
 
+nav{
+    background-color: teal  !important;
+}
+
 /* .nav-font-color{
     color: black ;      
 } */
@@ -12,7 +16,8 @@
 }
 
 .border-bold{
-    border: 1px solid black !important;
+    border: 1px solid white !important;
+    color: white;
 }
 
 /* .content{
