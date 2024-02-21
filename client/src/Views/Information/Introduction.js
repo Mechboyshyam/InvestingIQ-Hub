@@ -18,9 +18,8 @@ export class Page1 extends PureComponent {
           <div className="d-flex flex-box">
             <div className="col-4 text-center content p-3">Content List</div>
             <div className="col-8 blog">
+              <div className="text-center"><span className=" over-view">Overview</span></div>
               <h4 className="text-center">
-                {" "}
-                <br />
                 "Welcome to our learning platform. We are here to learn
                 Investing in Stock Market from basic to advanace."
               </h4>
@@ -36,7 +35,7 @@ export class Page1 extends PureComponent {
                 any criteria for investing? How to invest? Few people say share
                 market is gambling, really? You will get all ans of the
                 questions listed here and also the questions in your mind.
-              </p>{" "}
+              </p>
               <hr />
               <div className="text-center">
                 <img className="img-fluid" src={Thinking} alt="jpeg" />
@@ -51,7 +50,7 @@ export class Page1 extends PureComponent {
                 having capital of 1,000/- Rs. If we divide this in 100 equal
                 parts with same ammount then single part cost 10Rs. This small
                 part called as Share. <br />
-                👉 If you have to know the total share capital of company -{" "}
+                👉 If you have to know the total share capital of company -
                 <br />
                 <span className="formula">
                   Total share capital = Total share of company x Share price
@@ -64,6 +63,13 @@ export class Page1 extends PureComponent {
                 remember that there is selling and buying of vegetables and
                 fruits. In the same way it is also market place where buying and
                 selling of stocks occurs.
+              </p>
+              <p>
+                Stocks are differnciated into three categories - Small cap, Mid
+                cap and Large cap. They differ from each other in terms of
+                growth potential and risk. Small-caps have growth potential,
+                mid-caps balance stability and expansion and large-caps are
+                dependable, well-established businesses.
               </p>
               <p>
                 There is no restriction to invest, it can be small investor or
