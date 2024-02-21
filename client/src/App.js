@@ -7,7 +7,7 @@ import Navbar from './Component/Navbar/Navbar';
 import Wish from './Component/wish/Wish.js';
 
 function App() {
-  const text = "Welcome to our learning platform...😍";
+  const text = "";
   return (
    <div className='background'>
     <Navbar/>

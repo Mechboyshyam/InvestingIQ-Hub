@@ -1,21 +1,34 @@
 import React, { useState, useEffect } from "react";
 
 export default function TypingEffect(props) {
-  const [typing, setTyping] = useState("");
-  const [index, setIndex] = useState(0);
+  // const [typing, setTyping] = useState("");
+  // const [index, setIndex] = useState(0);
+  const [text, setText] = useState("");
+  const fullText =
+  "Welcome to our learning platform...😍";
 
-  useEffect(() => {
-    if (index < props.text.length) {
-      setTimeout(() => {
-        setTyping(typing + props.text[index]);
-        setIndex(index + 1);
-      }, 40);
+useEffect(() => {
+  let currentText = "";
+  let currentIndex = 0;
+
+  const interval = setInterval(() => {
+    currentText += fullText[currentIndex];
+    setText(currentText);
+    currentIndex++;
+
+    if (currentIndex === fullText.length) {
+      clearInterval(interval);
     }
-  }, [index]);
+  }, 100);
+
+  return () => {
+    clearInterval(interval);
+  };
+}, []);
 
   return (
-    <div>
-      <p>{typing}</p>
+    <div className="mt-3 text-center">
+      <p>{text}</p>
     </div>
   );
 };
