@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import "./Page1.css";
+import "./Introduction.css";
 import Thinking from "./../../Images/thinking.jpeg";
 
 export class Page1 extends PureComponent {
@@ -69,8 +69,18 @@ export class Page1 extends PureComponent {
                 There is no restriction to invest, it can be small investor or
                 big mutual funds, FII and DII companies.
                 <ul>
-                  <li>FII : Foreign Institutional Investor</li>
-                  <li>DII : Domestic Institutional Investor</li>
+                  <li>
+                    FII : Foreign Institutional Investor - These are the
+                    institutions invest in our financial market from outside of
+                    country which are registered or headquarterd.
+                  </li>
+                  <li>
+                    DII : Domestic Institutional Investor - Institutions or
+                    group of investor who choose to invest in financial market
+                    within the country where they live. These investement
+                    decisions are impacted by both political and economic
+                    trends.
+                  </li>
                 </ul>
               </p>{" "}
               <hr />
