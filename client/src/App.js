@@ -5,6 +5,7 @@ import Blogs from './Views/Information/Introduction.js';
 import './App.css';
 import Navbar from './Component/Navbar/Navbar';
 import Wish from './Component/wish/Wish.js';
+import Contact from './Views/Contact/Contact.js';
 
 function App() {
   const text = "";
@@ -17,6 +18,7 @@ function App() {
       <Route path="/" element={< Home />} />
       <Route path="/about" element={< About />} />
       <Route path="/blogs" element={< Blogs />} />
+      <Route path="/contact" element={< Contact />} />
       </Routes>
    </BrowserRouter>
    </div>

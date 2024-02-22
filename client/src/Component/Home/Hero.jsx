@@ -17,12 +17,12 @@ const Hero = () => {
       </div>
 
       {/* right */}
-      <div className="">
+      <div className="position-relative">
         <img
           id="heroBanner"
           src="/Hero/HeroBanner.jpeg"
           alt="hero banner home"
-          className="img-thumbnail"
+          className="img-fluid podition-absolute"
         />
       </div>
     </section>

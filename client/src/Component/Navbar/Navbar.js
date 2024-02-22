@@ -88,7 +88,7 @@ export default class Navbar extends Component {
                 className="btn bold btn-outline-dark my-2 border-bold my-sm-0"
                 type="submit"
               >
-                Contact us
+                <a href="/contact" className="contact">Contact us</a>
               </button>
             </form>
            </div>
