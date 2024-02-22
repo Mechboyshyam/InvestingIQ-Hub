@@ -5,9 +5,9 @@ export default class Contact extends Component {
   render() {
     return (
       <div>
-        <div class="container">
+        <div class="parent1 col-8">
           <form action="/action_page.php">
-            <label for="fname">Your Name :</label>
+            <label for="fname">Your Name</label>
             <input
               type="text"
               id="fname"
@@ -15,22 +15,22 @@ export default class Contact extends Component {
               placeholder="Your name.."
             />
 
-            <label for="lname">Email id :</label>
+            <label for="lname">Email id</label>
             <input
-              type="text"
+              type="email"
               id="lname"
               name="lastname"
-              placeholder="Your last name.."
+              placeholder="Your email.."
             />
 
-            <label for="subject">What can we help you with?</label>
+            <label for="subject">How can we help you?</label>
             <textarea
               id="subject"
               name="subject"
-              placeholder="Write something..."
+              placeholder="Write something.."
             ></textarea>
 
-            <button className="btn btn-success" type="button" h > Submit </button>
+            <input type="submit" value="Submit" />
           </form>
         </div>
       </div>
