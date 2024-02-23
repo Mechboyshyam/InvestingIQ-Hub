@@ -5,30 +5,30 @@ export default function TypingEffect(props) {
   // const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
   const fullText =
-  "Welcome to our learning platform...😍";
+    "Welcome to our blog! We're thrilled to have you here. Get ready for exciting insights, helpful tips, and inspiring stories. Let's embark on this journey together!";
 
-useEffect(() => {
-  let currentText = "";
-  let currentIndex = 0;
+  useEffect(() => {
+    let currentText = "";
+    let currentIndex = 0;
 
-  const interval = setInterval(() => {
-    currentText += fullText[currentIndex];
-    setText(currentText);
-    currentIndex++;
+    const interval = setInterval(() => {
+      currentText += fullText[currentIndex];
+      setText(currentText);
+      currentIndex++;
 
-    if (currentIndex === fullText.length) {
+      if (currentIndex === fullText.length) {
+        clearInterval(interval);
+      }
+    }, 50);
+
+    return () => {
       clearInterval(interval);
-    }
-  }, 100);
-
-  return () => {
-    clearInterval(interval);
-  };
-}, []);
+    };
+  }, []);
 
   return (
     <div className="mt-3 text-center">
       <p>{text}</p>
     </div>
   );
-};
+}
