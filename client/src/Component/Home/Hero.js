@@ -1,15 +1,32 @@
+import "./Hero.css";
 
-import React, { Component } from 'react'
-
-export default class 
-  extends Component {
-  render() {
-    return (
-      <div>
-         <div className="container">
-          Hi! 
-         </div>
+const Hero = () => {
+  return (
+    <section className="hero__main d-flex">
+      {/* left */}
+      <div className="p-3">
+        <h1>INNOVATIVE</h1>
+        <h1>SOLUTIONS FOR BUSINESSMEN</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+          expedita.
+        </p>
+        <button type="button" className="btn bgGreen makeRound">
+          OUR COMPANY
+        </button>
       </div>
-    )
-  }
-}
+
+      {/* right */}
+      <div className="position-relative">
+        <img
+          id="heroBanner"
+          src="/Hero/HeroBanner.jpeg"
+          alt="hero banner home"
+          className="img-fluid podition-absolute"
+        />
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

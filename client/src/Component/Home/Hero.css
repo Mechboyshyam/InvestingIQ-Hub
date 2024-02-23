@@ -1,0 +1,22 @@
+.hero__main {
+    max-width: 80%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#heroBanner {
+    width: 900px;
+    object-fit: cover;
+    height: 500px;
+}
+
+
+
+.bgGreen {
+    background-color: #59e5a8;
+}
+
+.makeRound {
+    border-radius: .5rem;
+}
