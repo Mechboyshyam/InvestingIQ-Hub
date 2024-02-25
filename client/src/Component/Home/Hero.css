@@ -12,8 +12,10 @@
     height: 500px;
 }
 
-.bgGreen {
-    background-color: #59e5a8;
+.bgTeal {
+    background-color: #11abba;
+    color: white;
+    font-weight: 700;
 }
 
 .makeRound {
@@ -22,6 +24,7 @@
 
 .parentImgContainer {
     position: relative;
+    margin-left: 10px;
 }
 
 .heroContent {
@@ -96,11 +99,12 @@
     }
 
     .heroContent {
-        margin-top: 6rem;
+        margin-top: 10rem;
         
     }
 
     .myImg {
         max-height: 100vh;
+        left: 0;
     }
 }

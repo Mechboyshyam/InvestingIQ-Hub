@@ -11,7 +11,7 @@ const Hero = () => {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
           expedita.
         </p>
-        <button type="button" className="btn bgGreen makeRound">
+        <button type="button" className="btn bgTeal makeRound">
           OUR COMPANY
         </button>
       </div>
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="parentImgContainer">
         <img
           id="heroBanner"
-          src="/Hero/HeroBanner.jpeg"
+          src="/Hero/blue color.png"
           alt="hero banner home"
           className="myImg"
         />

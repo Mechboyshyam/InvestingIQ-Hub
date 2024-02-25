@@ -5,7 +5,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div>
-        <div class="container d-flex justify-content-center align-items-center">
+        <div class="container margin-contact-page d-flex justify-content-center align-items-center">
           {/* <!-- // SVG */}
           {/* from: https://www.freepik.com/free-vector/new-message-concept-landing-page_5777076.htm 
   -------------------------------------------------------------
@@ -807,7 +807,7 @@ export default class Contact extends Component {
             <div class="form-group message">
               <textarea
                 id="formMessage"
-                class="form-control form-control-lg"
+                class="form-control form-control-md"
                 rows="7"
                 placeholder="Write Something..."
               ></textarea>

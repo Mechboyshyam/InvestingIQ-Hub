@@ -20,6 +20,26 @@ nav {
     color: white;
 }
 
+/* .border-bold:hover{
+    background-color: #11abba;
+    pointer-events: painted;
+} */
+
+.contact{
+    background-color: #11abba;
+    border: none !important;
+}
+
+.contact:hover{
+    background-color: #11abba;
+    text-decoration: none;
+    color: white;
+}
+/* 
+.hover-eff-btn:hover{
+    border: 2px solid red;
+} */
+
 
 @media (min-width:736px) {
     /* .main_nav {

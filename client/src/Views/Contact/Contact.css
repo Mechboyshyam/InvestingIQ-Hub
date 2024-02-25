@@ -3,6 +3,10 @@ svg {
 	margin-right: 4rem;
 }
 
+.margin-contact-page{
+  margin-top: -50px;
+}
+
 #envelope {
   animation: float 2s ease-in-out infinite;
 }
