@@ -5,14 +5,16 @@ const Hero = () => {
     <section className="hero__main">
       {/* left */}
       <div className="p-3 heroContent">
-        <h1>INNOVATIVE</h1>
-        <h1>SOLUTIONS FOR BUSINESSMEN</h1>
+        <h2 className="bold">Smart Investing Insights :</h2>
+        <h2 className="bold">Your Gateway to Financial IQ</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-          expedita.
+          Unlock the secrets of financial success with InvestingIQ-Hub, where we
+          provide smart investing insights to impower you with the knowledge and
+          skill needed to nevigate the complex word of finance. Elevate your
+          financial IQ and make informed decisions for a prosperous future.
         </p>
         <button type="button" className="btn bgTeal makeRound">
-          OUR COMPANY
+         <a href="/blogs" className="text-light text-decoration-none"> Start Learning -</a>
         </button>
       </div>
 

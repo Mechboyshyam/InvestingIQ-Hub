@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './Navbar.css';
-import DateTime from "../Date/date";
+// import DateTime from "../Date/date";
 // import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
@@ -21,7 +21,6 @@ export default class Navbar extends Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          {/* <Link to='/contact'>Home</Link> */}
           <div className="main_nav collapse navbar-collapse" id="navbarSupportedContent">
             <div className="col-4">
             <ul className="nav_items navbar-nav mr-auto">
@@ -43,12 +42,17 @@ export default class Navbar extends Component {
               <li className="nav-item active btn bold">
                 <a className="nav-link disabled" href="/">Analysis</a>
               </li>
+
+              <li className="nav-item active btn bold">
+                <a className="nav-link disabled" href="/contact">Contact</a>
+              </li>
+              
             </ul>
             </div>
             <div className="col-4">
-              <span className="btn btn-outline-dark border-bold bold">
+              {/* <span className="btn btn-outline-dark border-bold bold">
               <DateTime></DateTime>
-              </span>
+              </span> */}
             </div>
            <div className="col-4 ">
            <form className="form-inline search-box my-2 my-lg-0">
@@ -58,12 +62,12 @@ export default class Navbar extends Component {
                 placeholder="Search the content"
                 aria-label="Search"
               />
-              <button
+              {/* <button
                 className="contact hover-eff-btn bold my-2 my-sm-0"
                 type="submit"
               >
                 <a href="/contact" className="text-decoration-none contact text-light">Contact</a>
-              </button>
+              </button> */}
             </form>
            </div>
           </div>

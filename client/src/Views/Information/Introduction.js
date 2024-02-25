@@ -18,8 +18,8 @@ export class Page1 extends PureComponent {
           <div className="d-flex flex-box">
             <div className="col-4 text-center content p-3">Content List</div>
             <div className="col-8 blog">
-              <div className="text-center"><span className=" over-view">Overview</span></div>
-              <h4 className="text-center">
+              {/* <div className="text-center"><span className=" over-view">Overview</span></div> */}
+              <h4 className="text-center mt-4">
                 "Welcome to our learning platform. We are here to learn
                 Investing in Stock Market from basic to advanace."
               </h4>
