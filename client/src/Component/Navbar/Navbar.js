@@ -21,9 +21,9 @@ export default class Navbar extends Component {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="main_nav collapse navbar-collapse" id="navbarSupportedContent">
             <div className="col-4">
-            <ul className="navbar-nav mr-auto">
+            <ul className="nav_items navbar-nav mr-auto">
               <li className="nav-item active btn bold">
                 <a className="nav-link" href="/">
                   Home <span className="sr-only">(current)</span>
@@ -40,34 +40,6 @@ export default class Navbar extends Component {
                 </a>
               </li>
               <li className="nav-item dropdown">
-                {/* <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  More
-                </a> */}
-                {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="/about">
-                    About
-                  </a>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </div> */}
-              </li>
-              <li className="nav-item">
-                {/* <span className="nav-link text-center">
-                  Shyam Bhai...
-                </span> */}
               </li>
             </ul>
             </div>
@@ -85,10 +57,10 @@ export default class Navbar extends Component {
                 aria-label="Search"
               />
               <button
-                className="btn bold btn-outline-dark my-2 border-bold my-sm-0"
+                className="cancelBtn btn bold btn-outline-dark my-2 border-bold my-sm-0"
                 type="submit"
               >
-                <a href="/contact" className="contact">Contact us</a>
+                Contact us
               </button>
             </form>
            </div>

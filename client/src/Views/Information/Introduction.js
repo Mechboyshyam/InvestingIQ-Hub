@@ -10,7 +10,7 @@ export class Page1 extends PureComponent {
         <div className="mt-2">
           <h3 className="text-center title-design ">
             "Embarking on Your Financial Journey : A Beginner's Guide to Stock
-            Market Success."
+            Market Success. "
           </h3>
         </div>
         <div>

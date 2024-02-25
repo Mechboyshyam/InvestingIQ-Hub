@@ -1,35 +1,40 @@
-.user-name{
-    margin-right: 100px;
-    /* background: #000; */
-}
+/* .user-name {
+    margin-right: 0px;
+    background: #000;
+} */
 
-nav{
-    background-color: teal  !important;
+nav {
+    background-color: #11abba !important;
 }
 
 /* .nav-font-color{
     color: black ;      
 } */
 
-.bold{
-    font-weight:bold ;
+.bold {
+    font-weight: bold;
 }
 
-.border-bold{
+.border-bold {
     border: 1px solid white !important;
     color: white;
 }
 
-/* .content{
-    position: sticky ;
-} */
 
-.contact{
-    color: white;
-}
+@media (min-width:736px) {
+    /* .main_nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    } */
 
-.contact:hover{
-    /* background-color: teal; */
-    text-decoration: none;
-    color: white;
+    /* .main_nav {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid red;
+    } */
+    .nav_items {
+        display: flex !important;
+        flex-direction: row;
+        /* border: 2px solid red; */
+    }
 }

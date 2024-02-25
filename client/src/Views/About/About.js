@@ -9,7 +9,7 @@ export class About extends PureComponent {
           <div class="row">
             <div class="col-md-6">
               <h2>
-                <b>Discovering the Share Market: Your Guide to Financial Freedom  </b>
+                <b>Discovering the Share Market: Your Guide to Financial Freedom </b>
               </h2>
               <p>
                 Welcome to our Share Market Learning Blog! Here, we delve into

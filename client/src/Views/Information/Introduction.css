@@ -5,15 +5,16 @@
 
 .over-view{
     font-weight: 700;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     font-size: 30px;
     padding: 0px 10px 3px 10px;
 }
 
 .over-view{
-    background-color: teal;
+    background-color: #11abba;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px 0px 10px 0px;
     font-weight: 700;
     margin-top: 5px;
 }
@@ -28,7 +29,7 @@
 }
 
 .title-design{
-    border: 2px solid teal;
+    /* border: 2px solid teal; */
     border-radius: 10px;
     padding: 5px 5px 5px 5px;
     /* background-color: teal; */
@@ -49,3 +50,8 @@
     border: 2px solid teal;
     border-radius: 15px;
 } */
+
+.bg-successs{
+    color: #11abba;
+    text-decoration: underline;
+}
