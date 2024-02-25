@@ -1,12 +1,4 @@
-/* .home{
-    height: 100vh;
-    width: auto;
-} */
-
-/* .background {
-    background-image: url(../../Images/Politics.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: auto;
-    width: 100vw;
-  } */
+    .hero-home{
+        margin-top: -50px;
+        /* width: 110%; */
+    }

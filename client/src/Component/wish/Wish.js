@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './Wish.css';
 
 export default function TypingEffect(props) {
   // const [typing, setTyping] = useState("");
@@ -27,7 +28,7 @@ export default function TypingEffect(props) {
   }, []);
 
   return (
-    <div className="mt-3 text-center">
+    <div className="mt-3 text-center text-color">
       <p>{text}</p>
     </div>
   );

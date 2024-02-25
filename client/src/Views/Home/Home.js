@@ -7,7 +7,7 @@ function Home() {
     <div className="background">
       <Wish/>
       {/* hero section */}
-      <div className="mt-5">
+      <div className="hero-home">
         <Hero />
       </div>
     </div>

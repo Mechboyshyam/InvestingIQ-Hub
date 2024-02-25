@@ -60,7 +60,7 @@ export default class Navbar extends Component {
                 className="cancelBtn btn bold btn-outline-dark my-2 border-bold my-sm-0"
                 type="submit"
               >
-                Contact us
+                <a href="/contact" className="text-decoration-none text-light">Contact</a>
               </button>
             </form>
            </div>
