@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import './Navbar.css';
 // import DateTime from "../Date/date";
-// import { Link } from "react-router-dom";
-
+// import {Link} from 'react-router-dom';
 export default class Navbar extends Component {
   render() {
    
@@ -39,11 +38,14 @@ export default class Navbar extends Component {
                   About
                 </a>
               </li>
-              <li className="nav-item active btn bold">
+              {/* <li className="nav-item active btn bold">
                 <a className="nav-link disabled" href="/">Analysis</a>
-              </li>
+              </li> */}
 
               <li className="nav-item active btn bold">
+                {/* <Link to="/contact" className="text-decoration-none">
+                  Contact
+                </Link> */}
                 <a className="nav-link disabled" href="/contact">Contact</a>
               </li>
               
