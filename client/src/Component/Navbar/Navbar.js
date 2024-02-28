@@ -1,13 +1,9 @@
 import "./Navbar.css";
-import React, {useState } from "react";
-import { Component } from "react";
-
 // import DateTime from "../Date/date";
 import { Link } from "react-router-dom";
 
-export default class Navbar extends Component {
-  render() {
-    const [active, setActive] = useState("");
+export default  function Navbar() {
+  
     return (
       <>
         <nav className="navbar navbar-expand-lg navbar-dark sticky-top z-3 bg-teal ">
@@ -30,33 +26,26 @@ export default class Navbar extends Component {
             <div className="col-4">
               <ul className="nav_items navbar-nav mr-auto">
                 <li className="nav-item active btn bold">
-                  <a className="nav-link" href="/">
-                    Home <span className="sr-only">(current)</span>
-                  </a>
+                <Link to="" className="text-decoration-none  text-light">
+                    Home
+                  </Link>
                 </li>
                 <li className="nav-item active bold btn">
-                  <a className="nav-link" href="/blogs">
+                <Link to="blogs" className="text-decoration-none text-light">
                     Blogs
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item active btn bold">
-                  <a className="nav-link" href="/about">
+                <Link to="about" className="text-decoration-none text-light">
                     About
-                  </a>
+                  </Link>
                 </li>
                 {/* <li className="nav-item active btn bold">
                 <a className="nav-link disabled" href="/">Analysis</a>
               </li> */}
 
                 <li className="nav-item active btn bold">
-                  <Link
-                    to="/contact"
-                    className="text-decoration-none"
-                    onClick={() => {
-                      setActive("");
-                      window.scrollTo(0, 0);
-                    }}
-                  >
+                  <Link to="contact" className="text-decoration-none text-light">
                     Contact
                   </Link>
 
@@ -89,5 +78,5 @@ export default class Navbar extends Component {
         </nav>
       </>
     );
-  }
+  
 }
