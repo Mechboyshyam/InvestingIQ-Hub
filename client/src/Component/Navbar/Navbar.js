@@ -1,5 +1,4 @@
 import "./Navbar.css";
-// import DateTime from "../Date/date";
 import { Link } from "react-router-dom";
 
 export default  function Navbar() {
