@@ -13,6 +13,12 @@ nav {
 
 .bold {
     font-weight: bold;
+    font-size: 30px;
+}
+
+.font-size{
+    font-weight: 700 !important;
+    font-size: 17px;
 }
 
 .border-bold {

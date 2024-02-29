@@ -6,7 +6,8 @@ export default  function Navbar() {
     return (
       <>
         <nav className="navbar navbar-expand-lg navbar-dark sticky-top z-3 bg-teal ">
-          <span className="navbar-brand bold">𝐼𝓃𝓋𝑒𝓈𝑒𝓉𝒾𝓃𝑔𝐼𝒬-𝐻𝓊𝒷</span>
+          <span className="navbar-brand bold">ɪɴᴠᴇꜱᴇᴛɪɴɢɪQ-ʜᴜʙ</span>
+          {/* <span className="navbar-brand bold">𝐼𝓃𝓋𝑒𝓈𝑒𝓉𝒾𝓃𝑔𝐼𝒬-𝐻𝓊𝒷</span> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -25,26 +26,26 @@ export default  function Navbar() {
             <div className="col-4">
               <ul className="nav_items navbar-nav mr-auto">
                 <li className="nav-item active btn bold">
-                <Link to="" className="text-decoration-none text-decoration btn  text-light">
+                <Link to="" className="text-decoration-none text-decoration btn font-size text-light">
                     Home
                   </Link>
                 </li>
                 <li className="nav-item active bold btn">
-                <Link to="blogs" className="text-decoration-none text-decoration btn text-light">
+                <Link to="blogs" className="text-decoration-none text-decoration btn font-size text-light">
                     Blogs
                   </Link>
                 </li>
-                <li className="nav-item active btn bold">
-                <Link to="about" className="text-decoration-none text-decoration btn text-light">
+                {/* <li className="nav-item active btn bold">
+                <Link to="about" className="text-decoration-none text-decoration btn font-size text-light">
                     About
                   </Link>
-                </li>
+                </li> */}
                 {/* <li className="nav-item active btn bold">
                 <a className="nav-link disabled" href="/">Analysis</a>
               </li> */}
 
                 <li className="nav-item active btn bold">
-                  <Link to="contact" className="text-decoration-none text-decoration btn text-light">
+                  <Link to="contact" className="text-decoration-none text-decoration btn font-size text-light">
                     Contact
                   </Link>
 

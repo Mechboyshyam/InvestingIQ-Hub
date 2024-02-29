@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,9 +14,11 @@ const Hero = () => {
           skill needed to nevigate the complex word of finance. Elevate your
           financial IQ and make informed decisions for a prosperous future.
         </p>
-        <button type="button" className="btn bgTeal makeRound">
-         <a href="/blogs" className="text-light text-decoration-none"> Start Learning -</a>
-        </button>
+        <Link to="blogs" className="text-light text-decoration-none">
+          <span type="button" className="btn bgTeal makeRound">
+            Start Learning -
+          </span>
+        </Link>
       </div>
 
       {/* right */}
