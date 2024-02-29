@@ -35,10 +35,10 @@ nav {
     text-decoration: none;
     color: white;
 }
-/* 
-.hover-eff-btn:hover{
-    border: 2px solid red;
-} */
+
+.text-decoration:hover{
+    text-decoration: none;
+}
 
 
 @media (min-width:736px) {

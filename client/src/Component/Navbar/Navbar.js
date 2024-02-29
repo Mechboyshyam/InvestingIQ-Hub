@@ -26,17 +26,17 @@ export default  function Navbar() {
             <div className="col-4">
               <ul className="nav_items navbar-nav mr-auto">
                 <li className="nav-item active btn bold">
-                <Link to="" className="text-decoration-none  text-light">
+                <Link to="" className="text-decoration-none text-decoration btn  text-light">
                     Home
                   </Link>
                 </li>
                 <li className="nav-item active bold btn">
-                <Link to="blogs" className="text-decoration-none text-light">
+                <Link to="blogs" className="text-decoration-none text-decoration btn text-light">
                     Blogs
                   </Link>
                 </li>
                 <li className="nav-item active btn bold">
-                <Link to="about" className="text-decoration-none text-light">
+                <Link to="about" className="text-decoration-none text-decoration btn text-light">
                     About
                   </Link>
                 </li>
@@ -45,7 +45,7 @@ export default  function Navbar() {
               </li> */}
 
                 <li className="nav-item active btn bold">
-                  <Link to="contact" className="text-decoration-none text-light">
+                  <Link to="contact" className="text-decoration-none text-decoration btn text-light">
                     Contact
                   </Link>
 
