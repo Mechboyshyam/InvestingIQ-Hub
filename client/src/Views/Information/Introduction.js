@@ -5,13 +5,16 @@ import Thinking from "./../../Images/thinking.jpeg";
 export class Page1 extends PureComponent {
   render() {
     return (
-      <div className="parent">
+      <div className="parent main-1 mt-2">
         {/* this is the main container */}
         <div className="mt-2">
           <h3 className="text-center title-design ">
-            "Embarking on Your Financial Journey : A Beginner's Guide to Stock
-            Market Success. "
+            "Welcome aboard our blog! We're delighted to have you join us
+            as we kick off this adventure together. Get ready to dive into
+            intriguing topics and insightful discussions. Let's make this
+            journey one to remember!"
           </h3>
+          <hr />
         </div>
         <div>
           {/* making two dives here for the content and the information  */}
@@ -19,25 +22,11 @@ export class Page1 extends PureComponent {
             <div className="col-4 text-center content p-3">Content List</div>
             <div className="col-8 blog">
               {/* <div className="text-center"><span className=" over-view">Overview</span></div> */}
-              <h4 className="text-center mt-4">
-                "Welcome to our learning platform. We are here to learn
-                Investing in Stock Market from basic to advanace."
-              </h4>
-              <p>
-                Most of the people have this que in their mind that 'When to
-                start the investing?' Once the wise man said start the investing
-                when you know about investing. There is no perticular age to
-                start the investing. So gain knowledge and after that start
-                investing-
-              </p>
-              <p>
-                Do you ever have que in your mind that who can invest? Is there
-                any criteria for investing? How to invest? Few people say share
-                market is gambling, really? You will get all ans of the
-                questions listed here and also the questions in your mind.
-              </p>
-              <hr />
               <div className="text-center">
+                <h4 className="text-center title-design-topic ">
+                  "Embarking on Your Financial Journey : A Beginner's Guide to
+                  Stock Market Success. "
+                </h4>
                 <img className="img-fluid" src={Thinking} alt="jpeg" />
               </div>{" "}
               <hr />

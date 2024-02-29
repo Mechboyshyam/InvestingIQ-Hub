@@ -35,11 +35,11 @@ export default  function Navbar() {
                     Blogs
                   </Link>
                 </li>
-                {/* <li className="nav-item active btn bold">
+                <li className="nav-item active btn bold">
                 <Link to="about" className="text-decoration-none text-decoration btn font-size text-light">
                     About
                   </Link>
-                </li> */}
+                </li>
                 {/* <li className="nav-item active btn bold">
                 <a className="nav-link disabled" href="/">Analysis</a>
               </li> */}

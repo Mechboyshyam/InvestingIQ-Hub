@@ -3,6 +3,12 @@
     margin: auto;
 }
 
+.main-1
+{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
 .over-view{
     font-weight: 700;
     margin-top: 15px;
@@ -36,6 +42,17 @@
     /* color: white; */
     border-radius: 15px;
     font-weight: 700;
+    margin-top: 5px;
+}
+
+.title-design-topic{
+    /* border: 2px solid teal; */
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    /* background-color: teal; */
+    /* color: white; */
+    border-radius: 15px;
+    font-weight: 600;
     margin-top: 5px;
 }
 
