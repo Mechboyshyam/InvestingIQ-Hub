@@ -19,11 +19,11 @@
               </p>
             </div>
             <div class="col-md-6">
-              <img
+              <!-- <img
                 src="https://static.toiimg.com/thumb/msid-105755204,width-400,resizemode-4/105755204.jpg"
                 alt="Jpg"
                 className="img-fluid"
-              />
+              /> -->
             </div>
           </div>
 
