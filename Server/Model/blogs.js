@@ -8,4 +8,3 @@ const blogSchema = new Schema({
 }, { timestamps: true });
 
 module.exports = mongoose.model("Blog", blogSchema);
-
