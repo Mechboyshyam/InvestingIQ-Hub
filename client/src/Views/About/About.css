@@ -6,3 +6,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.back-color{
+    background-color: #ade0ec;
+}

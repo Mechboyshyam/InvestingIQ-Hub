@@ -6,11 +6,36 @@ export class About extends PureComponent {
     return (
       <div>
         <h1 className="text-center ">𝒜𝒷𝑜𝓊𝓉 𝓊𝓈</h1>
-        <h4 className="text-center mt-4">
-          "Welcome to our learning platform. We are here to learn Investing in
-          Stock Market from basic to advanace."
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <div class="alert back-color" role="alert">
+                <p>
+        <h4 className="text-center alert mt-4">
+          "Welcome to our Stock Market Investing Platform! Let's learn together,
+          from basics to advanced techniques. Join us on this exciting journey!"
         </h4>
-        <div class="container about-main mt-2">
+                  Hey there! Ever noticed how many folks are diving into YouTube
+                  or social media lately? Some are genuine creators, while
+                  others are just chasing numbers and cash. Beware of those
+                  promising quick riches, especially from trading platforms.
+                  Always do your research, visit their sites, and read reviews
+                  before trusting anyone.
+                </p>
+                <p>
+                  Here, we're all about learning to thrive in the stock market!
+                  📈 We're not here to sell you stocks or make quick bucks. Our
+                  goal is to empower you with market knowledge first. Later,
+                  we'll dive into fascinating topics like the Psychology of
+                  Money and cool trading strategies.
+                </p>
+                <h2 class="text-center mt-4">Happy Investing!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div class="container about-main mt-2">
           <div className="text-center1">
             <p>
               In today's scenario many people started youtube channel, few
@@ -33,7 +58,7 @@ export class About extends PureComponent {
             </p>
             <h2 className="text-center ">Happy Investing..</h2>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
