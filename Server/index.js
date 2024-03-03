@@ -1,56 +1,98 @@
 const express= require('express');
 const dotenv = require('dotenv');
+const path=require('path');
 dotenv.config();
 const app = express();
 app.use(express.json());
-const router = express.Router();
-const Blog = require("./Model/blogs");
+// const router = express.Router();
+const Blog = require("./Model/blogs.js");
+const mongoose= require('mongoose');
+// here we connected mongoose to mongodb
+mongoose.connect(process.env.MONGODB_URL, {
+  // useNewUrlParser: true
+})
+.then(() => {
+  console.log("Connected to MongoDB");
+})
+.catch((error) => {
+  console.error("Error connecting to MongoDB:", error);
+});
+
+
 // api start here
 
-router.post("/createBlog", async (req, res) => {
+const router = express.Router();
+
+// Create a new blog post
+app.post('/blogs', async (req, res) => {
   try {
     const { title, description } = req.body;
-
-    // Create a new instance of the Blog model
-    const newBlog = new Blog({
-      title: title,
-      description: description,
-    });
-
-    // Save the new blog to the database
-    const savedBlog = await newBlog.save();
-
-    // Send a success response with the saved blog data
-    res.json({
-      success: true,
-      message: "Blog created successfully",
-      data: savedBlog,
-    });
+    const blog = new Blog({ title, description });
+    const savedBlog = await blog.save();
+    res.json(savedBlog);
   } catch (error) {
-    // If there's an error, send an error response
-    res.status(500).json({
-      success: false,
-      message: "Failed to create blog",
-      error: error.message,
-    });
+    res.status(400).json({ message: error.message });
+  }
+});
+
+// Get all blog posts
+router.get('/blogs', async (req, res) => {
+  try {
+    const blogs = await Blog.find();
+    res.json(blogs);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// Get a single blog post by ID
+router.get('/blogs/:id', async (req, res) => {
+  try {
+    const blog = await Blog.findById(req.params.id);
+    if (blog == null) {
+      return res.status(404).json({ message: 'Blog not found' });
+    }
+    res.json(blog);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// Update a blog post by ID
+router.patch('/blogs/:id', async (req, res) => {
+  try {
+    const { title, description } = req.body;
+    const updatedBlog = await Blog.findByIdAndUpdate(req.params.id, { title, description }, { new: true });
+    res.json(updatedBlog);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+
+// Delete a blog post by ID
+router.delete('/blogs/:id', async (req, res) => {
+  try {
+    await Blog.findByIdAndDelete(req.params.id);
+    res.json({ message: 'Blog deleted' });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
   }
 });
 
 module.exports = router;
 
+
 // write api under this space
 
-// app.use(express.static(path.join(__dirname,'..','client','build')));
+app.use(express.static(path.join(__dirname,'build')));
 
 // app.get('*',(req,res)=>{res.sendFile(path.join(__dirname,'..','client','build','index.html'))});
 app.get('/', (req,res)=>{
-    res.json({
-        message:"Welcome, to InvestingIQ-Hub"
-    })
+    res.sendFile(path.join(__dirname,"build","index.html"))
 })
 
 
-const PORT= process.env.PORT || 5001
+const PORT= process.env.PORT || 5000
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`)
