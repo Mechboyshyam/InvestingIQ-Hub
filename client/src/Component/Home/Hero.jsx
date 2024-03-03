@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="p-3 heroContent">
         <h2 className="bold">Smart Investing Insights :</h2>
         <h2 className="bold">Your Gateway to Financial IQ</h2>
-        <p>
+        <p className="text-align">
           Unlock the secrets of financial success with InvestingIQ-Hub, where we
           provide smart investing insights to impower you with the knowledge and
           skill needed to nevigate the complex word of finance. Elevate your

@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import "./Introduction.css";
+import "./Blogs.css";
 import Thinking from "./../../Images/thinking.jpeg";
 
 export class Page1 extends PureComponent {
@@ -8,7 +8,7 @@ export class Page1 extends PureComponent {
       <div className="parent main-1 mt-2">
         {/* this is the main container */}
         <div className="mt-2">
-          <h3 className="text-center title-design ">
+          <h3 className="text-center title-design">
             "Welcome aboard our blog! We're delighted to have you join us
             as we kick off this adventure together. Get ready to dive into
             intriguing topics and insightful discussions. Let's make this
@@ -18,13 +18,13 @@ export class Page1 extends PureComponent {
         </div>
         <div>
           {/* making two dives here for the content and the information  */}
-          <div className="d-flex flex-box">
+          <div className="d-flex flex-box text-align">
             <div className="col-4 text-center content p-3">Content List</div>
             <div className="col-8 blog">
               {/* <div className="text-center"><span className=" over-view">Overview</span></div> */}
               <div className="text-center">
                 <h4 className="text-center title-design-topic ">
-                  "Embarking on Your Financial Journey : A Beginner's Guide to
+                "Embarking on Your Financial Journey : A Beginner's Guide to
                   Stock Market Success. "
                 </h4>
                 <img className="img-fluid" src={Thinking} alt="jpeg" />

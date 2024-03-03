@@ -6,7 +6,7 @@ import "./index.css";
 import Home from "./Views/Home/Home";
 import About from "./Views/About/About";
 import Contact from "./Views/Contact/Contact";
-import Blogs from './Views/Information/Introduction.js';
+import Blogs from './Views/Blogs/Blogs.js';
 import App from './App.js';
 
 const router = createBrowserRouter([

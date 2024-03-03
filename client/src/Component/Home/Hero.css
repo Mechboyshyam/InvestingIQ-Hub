@@ -6,6 +6,10 @@
     flex-wrap: wrap;
 }
 
+.text-align{
+    text-align: justify ;
+}
+
 #heroBanner {
     width: 900px;
     object-fit: cover;
