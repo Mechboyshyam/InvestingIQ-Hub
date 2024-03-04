@@ -1,9 +1,10 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import "./Blogs.css";
 import Thinking from "./../../Images/thinking.jpeg";
+// import { useState } from "react";
 
-export class Page1 extends PureComponent {
-  render() {
+function Blogs(){
+    // const [currentBlog, setAllBlog] = useState("");
     return (
       <div className="parent main-1 mt-2">
         {/* this is the main container */}
@@ -28,7 +29,7 @@ export class Page1 extends PureComponent {
                   Stock Market Success. "
                 </h4>
                 <img className="img-fluid" src={Thinking} alt="jpeg" />
-              </div>{" "}
+              </div>
               <hr />
               <p>
                 <b>What is share? What is share market?</b>
@@ -77,7 +78,7 @@ export class Page1 extends PureComponent {
                     trends.
                   </li>
                 </ul>
-              </p>{" "}
+              </p>
               <hr />
               <span>
                 <b>
@@ -123,6 +124,6 @@ export class Page1 extends PureComponent {
       </div>
     );
   }
-}
 
-export default Page1;
+
+export default Blogs;

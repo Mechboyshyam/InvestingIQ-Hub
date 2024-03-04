@@ -6,7 +6,7 @@ import "./index.css";
 import Home from "./Views/Home/Home";
 import About from "./Views/About/About";
 import Contact from "./Views/Contact/Contact";
-import Blogs from './Views/Blogs/Blogs.js';
+import Blog from "./Views/Blogs/Blog.js";
 import App from './App.js';
 
 const router = createBrowserRouter([
@@ -26,16 +26,16 @@ const router = createBrowserRouter([
       },
       {
         path: "blogs",
-        element: <Blogs />,
+        element: <Blog />,
       },
       {
         path: "contact",
         element: <Contact />,
       },
-      // {
-      //   path: "contact",
-      //   element: <Contact />,
-      // },
+      {
+        path: "test",
+        element: <Contact />,
+      },
     ],
   },
 ]);

@@ -36,7 +36,7 @@ app.post('/blogs', async (req, res) => {
 });
 
 // Get all blog posts
-router.get('/blogs', async (req, res) => {
+app.get('/blogs', async (req, res) => {
   try {
     const blogs = await Blog.find();
     res.json(blogs);
