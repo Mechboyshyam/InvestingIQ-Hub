@@ -1,16 +1,17 @@
-import React from 'react'
-import './BlogCard.css'
+import React from 'react';
+// import axios from 'axios';
+import "./BlogCard.css";
 function BlogCard({ title }) {
-
-//   const [blogs, setBlogs] = useState("");
+ console.log(title)
 
   return (
-    <div className='text-center'>
-     <h2>
+    <div className="text-center">
+      <h2>
+        hello
         {title}
-     </h2>
+      </h2>
     </div>
-  )
+  );
 }
 
 export default BlogCard;

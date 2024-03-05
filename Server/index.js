@@ -1,9 +1,11 @@
 const express= require('express');
 const dotenv = require('dotenv');
+const cors = require('cors');
 const path=require('path');
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.use(cors());
 // const router = express.Router();
 const Blog = require("./Model/blogs.js");
 const mongoose= require('mongoose');
@@ -36,9 +38,9 @@ app.post('/blogs', async (req, res) => {
 });
 
 // Get all blog posts
-app.get('/blogs', async (req, res) => {
+app.get('/getBlogs', async (req, res) => {
   try {
-    const blogs = await Blog.find();
+    const blogs = await Blog.find({});
     res.json(blogs);
   } catch (error) {
     res.status(500).json({ message: error.message });

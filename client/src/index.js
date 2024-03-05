@@ -6,7 +6,8 @@ import "./index.css";
 import Home from "./Views/Home/Home";
 import About from "./Views/About/About";
 import Contact from "./Views/Contact/Contact";
-import Blog from "./Views/Blogs/Blog.js";
+// import Blog from "./Views/Blogs/Blog.js";
+import BlogCard from "./Component/BlogCard/Blogcard.js";
 import App from './App.js';
 
 const router = createBrowserRouter([
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: "blogs",
-        element: <Blog />,
+        element: <BlogCard />,
       },
       {
         path: "contact",
