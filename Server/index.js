@@ -1,35 +1,55 @@
-const express= require('express');
-const dotenv = require('dotenv');
-const cors = require('cors');
-const path=require('path');
+const express = require("express");
+const dotenv = require("dotenv");
+const cors = require("cors");
+const path = require("path");
 dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
 // const router = express.Router();
 const Blog = require("./Model/blogs.js");
-const mongoose= require('mongoose');
+const mongoose = require("mongoose");
 // here we connected mongoose to mongodb
-mongoose.connect(process.env.MONGODB_URL, {
-  // useNewUrlParser: true
-})
-.then(() => {
-  console.log("Connected to MongoDB");
-})
-.catch((error) => {
-  console.error("Error connecting to MongoDB:", error);
-});
-
+mongoose
+  .connect(process.env.MONGODB_URL, {
+    // useNewUrlParser: true
+  })
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((error) => {
+    console.error("Error connecting to MongoDB:", error);
+  });
 
 // api start here
 
 const router = express.Router();
 
 // Create a new blog post
-app.post('/blogs', async (req, res) => {
+app.post("/createBlogs", async (req, res) => {
   try {
-    const { title, topic1,  para1,formula, para2, para3, para4,   } = req.body;
-    const blog = new Blog({ title, topic1, });
+    const {
+      title,
+      description,
+      topic1,
+      para1,
+      formula,
+      para2,
+      para3,
+      topic2,
+      topic3, topic4, li1, li2, li3, li4, li5, li6, li7, li71, li72, li73, li74
+    } = req.body;
+    const blog = new Blog({
+      title,
+      description,
+      topic1,
+      para1,
+      formula,
+      para2,
+      para3,
+      topic2,
+      topic3, topic4, li1, li2, li3, li4, li5, li6, li7, li71, li72, li73, li74
+    });
     const savedBlog = await blog.save();
     res.json(savedBlog);
   } catch (error) {
@@ -38,7 +58,7 @@ app.post('/blogs', async (req, res) => {
 });
 
 // Get all blog posts
-app.get('/getBlogs', async (req, res) => {
+app.get("/getBlogs", async (req, res) => {
   try {
     const blogs = await Blog.find({});
     res.json(blogs);
@@ -48,11 +68,11 @@ app.get('/getBlogs', async (req, res) => {
 });
 
 // Get a single blog post by ID
-router.get('/blogs/:id', async (req, res) => {
+router.get("/blogs/:id", async (req, res) => {
   try {
     const blog = await Blog.findById(req.params.id);
     if (blog == null) {
-      return res.status(404).json({ message: 'Blog not found' });
+      return res.status(404).json({ message: "Blog not found" });
     }
     res.json(blog);
   } catch (error) {
@@ -61,10 +81,14 @@ router.get('/blogs/:id', async (req, res) => {
 });
 
 // Update a blog post by ID
-router.patch('/blogs/:id', async (req, res) => {
+router.patch("/blogs/:id", async (req, res) => {
   try {
     const { title, description } = req.body;
-    const updatedBlog = await Blog.findByIdAndUpdate(req.params.id, { title, description }, { new: true });
+    const updatedBlog = await Blog.findByIdAndUpdate(
+      req.params.id,
+      { title, description },
+      { new: true }
+    );
     res.json(updatedBlog);
   } catch (error) {
     res.status(400).json({ message: error.message });
@@ -72,10 +96,10 @@ router.patch('/blogs/:id', async (req, res) => {
 });
 
 // Delete a blog post by ID
-router.delete('/blogs/:id', async (req, res) => {
+router.delete("/blogs/:id", async (req, res) => {
   try {
     await Blog.findByIdAndDelete(req.params.id);
-    res.json({ message: 'Blog deleted' });
+    res.json({ message: "Blog deleted" });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -83,19 +107,17 @@ router.delete('/blogs/:id', async (req, res) => {
 
 module.exports = router;
 
-
 // write api under this space
 
-app.use(express.static(path.join(__dirname,'build')));
+app.use(express.static(path.join(__dirname, "build")));
 
 // app.get('*',(req,res)=>{res.sendFile(path.join(__dirname,'..','client','build','index.html'))});
-app.get('/', (req,res)=>{
-    res.sendFile(path.join(__dirname,"build","index.html"))
-})
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
+const PORT = process.env.PORT || 5001;
 
-const PORT= process.env.PORT || 5001
-
-app.listen(PORT, ()=>{
-    console.log(`Server is running on port ${PORT}`)
-})
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
