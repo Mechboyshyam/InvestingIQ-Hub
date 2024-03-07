@@ -1,10 +1,7 @@
 import React from "react";
 import "./Blogs.css";
 import Thinking from "./../../Images/thinking.jpeg";
-// import { useState } from "react";
-
 function Blogs(){
-    // const [currentBlog, setAllBlog] = useState("");
     return (
       <div className="parent main-1 mt-2">
         {/* this is the main container */}
