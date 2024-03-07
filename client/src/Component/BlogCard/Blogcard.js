@@ -30,7 +30,7 @@ function BlogCard({ blogs }) {
                 "Embarking on Your Financial Journey : A Beginner's Guide to
                   Stock Market Success. "
                 </h4>
-                <img className="img-fluid"  alt="jpeg" />
+                <img className="img-fluid" alt="jpeg" />
               </div>
               <hr />
               <p>

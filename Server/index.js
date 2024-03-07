@@ -28,8 +28,8 @@ const router = express.Router();
 // Create a new blog post
 app.post('/blogs', async (req, res) => {
   try {
-    const { title, description } = req.body;
-    const blog = new Blog({ title, description });
+    const { title, topic1,  para1,formula, para2, para3, para4,   } = req.body;
+    const blog = new Blog({ title, topic1, });
     const savedBlog = await blog.save();
     res.json(savedBlog);
   } catch (error) {
