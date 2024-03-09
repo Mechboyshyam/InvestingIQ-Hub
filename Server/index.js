@@ -31,24 +31,50 @@ app.post("/createBlogs", async (req, res) => {
     const {
       title,
       description,
-      topic1,
-      para1,
-      formula,
-      para2,
-      para3,
-      topic2,
-      topic3, topic4, li1, li2, li3, li4, li5, li6, li7, li71, li72, li73, li74
+      paragraph
+      // topic1,
+      // para1,
+      // formula,
+      // para2,
+      // para3,
+      // topic2,
+      // topic3,
+      // topic4,
+      // li1,
+      // li2,
+      // li3,
+      // li4,
+      // li5,
+      // li6,
+      // li7,
+      // li71,
+      // li72,
+      // li73,
+      // li74
     } = req.body;
     const blog = new Blog({
       title,
       description,
-      topic1,
-      para1,
-      formula,
-      para2,
-      para3,
-      topic2,
-      topic3, topic4, li1, li2, li3, li4, li5, li6, li7, li71, li72, li73, li74
+      paragraph
+      // topic1,
+      // para1,
+      // formula,
+      // para2,
+      // para3,
+      // topic2,
+      // topic3,
+      // topic4,
+      // li1,
+      // li2,
+      // li3,
+      // li4,
+      // li5,
+      // li6,
+      // li7,
+      // li71,
+      // li72,
+      // li73,
+      // li74
     });
     const savedBlog = await blog.save();
     res.json(savedBlog);

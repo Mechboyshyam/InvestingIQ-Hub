@@ -24,7 +24,7 @@ export default function Blog() {
   return (
     <div>
       <div className="container">
-        <BlogCard blogs={blogs} />;
+        <BlogCard blogs={blogs} />
       </div>
     </div>
   );

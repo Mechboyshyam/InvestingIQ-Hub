@@ -79,7 +79,7 @@ function BlogCard({ blogs }) {
                     {item?.li5}
                   </li>
                   <li>
-                    
+                  {item?.li6}
                   </li>
                   <li>
                     
