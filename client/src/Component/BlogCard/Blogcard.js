@@ -1,5 +1,4 @@
 import React from "react";
-// import axios from 'axios';
 import "./BlogCard.css";
 function BlogCard({ blogs }) {
   console.log("blogs", blogs);
@@ -7,6 +6,7 @@ function BlogCard({ blogs }) {
   return (
     <div className="parent main-1 mt-2">
        <div className="mt-2">
+        {/* this text will be in the top of the page which will show always */}
           <h3 className="text-center title-design">
             "Welcome aboard our blog! We're delighted to have you join us
             as we kick off this adventure together. Get ready to dive into
@@ -24,7 +24,6 @@ function BlogCard({ blogs }) {
           <div className="d-flex flex-box text-align">
             <div className="col-4 text-center content p-3">Content List</div>
             <div className="col-8 blog">
-              {/* <div className="text-center"><span className=" over-view">Overview</span></div> */}
               <div className="text-center">
                 <h4 className="text-center title-design-topic ">
                 {item?.title}
