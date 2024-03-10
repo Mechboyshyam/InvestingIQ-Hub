@@ -95,8 +95,7 @@ function BlogCard({ blogs }) {
             </div>
           </div>
         </div>
-              {/* <h1>{item?.title}</h1> */}
-              {/* <p>{item?.description}</p> */}
+              <hr />
             </div>
           );
         })}
