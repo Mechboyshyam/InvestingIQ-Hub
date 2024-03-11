@@ -28,65 +28,64 @@ function BlogCard({ blogs }) {
                 <h4 className="text-center title-design-topic ">
                 {item?.title}
                 </h4>
-                <img className="img-fluid" alt="jpeg" />
+                <img className="img-fluid"  alt="jpeg" />
               </div>
               <hr />
               <p>
-                <b>{item?.topic1}</b>
+                <b>{item?.topic[0]}</b>
                 <br />
-                {item?.para1}
+                {item?.paragraph[0]}
                 <br />
                 <span className="formula">
                   {item?.formula}
                 </span>
                 <br />
-                <br />{item?.para2}
+                <br />{item?.paragraph[1]}
               </p>
               <p>
-                {item?.para3}
+                {item?.paragraph[2]}
               </p>
               <p>
-               {item?.topic2}
+               {item?.topic[1]}
                 <ul>
                   <li>
-                   {item?.li1}
+                   {item?.list[0]}
                   </li>
                   <li>
-                   {item?.li2}
+                   {item?.list[1]}
                   </li>
                 </ul>
               </p>
               <hr />
               <span>
                 <b>
-                  {item?.topic3}
+                  {item?.topic[2]}
                 </b>
                 <ol>
                   <li>
-                   {item?.li3}
+                   {item?.list[2]}
                   </li>
                   <li>
-                    {item?.li4}
+                    {item?.list[3]}
                   </li>
                 </ol>
               </span>
-              {/* what is nse and bse */}
               <p>
-                <b>{item?.topic4}</b>
+                <b>{item?.topic[3]}</b>
                 <ol>
                   <li>
-                    {item?.li5}
+                    {item?.list[4]}
                   </li>
                   <li>
-                  {item?.li6}
+                  {item?.list[5]}
                   </li>
                   <li>
                     
                     <ul>
-                      <li>{item?.li71}</li>
-                      <li>{item?.li72}</li>
-                      <li>{item?.li73}</li>
-                      <li>{item?.li74}</li>
+                      <li>{item?.list[6]}</li>
+                      <li>{item?.list[7]}</li>
+                      <li>{item?.list[8]}</li>
+                      <li>{item?.list[9]}</li>
                     </ul>
                   </li>
                 </ol>

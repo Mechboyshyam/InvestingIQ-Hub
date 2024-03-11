@@ -33,7 +33,8 @@ app.post("/createBlogs", async (req, res) => {
       paragraph,
       topic,
       formula,
-      list
+      list,
+      img
     } = req.body;
     const blog = new Blog({
       title,
@@ -41,7 +42,8 @@ app.post("/createBlogs", async (req, res) => {
       paragraph,
       topic,
       formula,
-      list
+      list,
+      img
     });
     const savedBlog = await blog.save();
     res.json(savedBlog);
