@@ -21,60 +21,27 @@ mongoose
     console.error("Error connecting to MongoDB:", error);
   });
 
-// api start here
-
-const router = express.Router();
-
+  const router = express.Router();
+  
+  // api start here
 // Create a new blog post
 app.post("/createBlogs", async (req, res) => {
   try {
     const {
       title,
       description,
-      paragraph
-      // topic1,
-      // para1,
-      // formula,
-      // para2,
-      // para3,
-      // topic2,
-      // topic3,
-      // topic4,
-      // li1,
-      // li2,
-      // li3,
-      // li4,
-      // li5,
-      // li6,
-      // li7,
-      // li71,
-      // li72,
-      // li73,
-      // li74
+      paragraph,
+      topic,
+      formula,
+      list
     } = req.body;
     const blog = new Blog({
       title,
       description,
-      paragraph
-      // topic1,
-      // para1,
-      // formula,
-      // para2,
-      // para3,
-      // topic2,
-      // topic3,
-      // topic4,
-      // li1,
-      // li2,
-      // li3,
-      // li4,
-      // li5,
-      // li6,
-      // li7,
-      // li71,
-      // li72,
-      // li73,
-      // li74
+      paragraph,
+      topic,
+      formula,
+      list
     });
     const savedBlog = await blog.save();
     res.json(savedBlog);

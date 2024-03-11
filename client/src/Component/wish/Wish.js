@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './Wish.css';
+import "./Wish.css";
 
 export default function TypingEffect(props) {
   // const [typing, setTyping] = useState("");
