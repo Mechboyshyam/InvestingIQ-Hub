@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="hero__main">
       {/* left */}
-      <div className="p-3 heroContent">
+      <div className=" heroContent">
         <h2 className="bold">Smart Investing Insights :</h2>
         <h2 className="bold">Your Gateway to Financial IQ</h2>
         <p className="text-align">

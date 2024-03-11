@@ -6,7 +6,7 @@ export default function TypingEffect(props) {
   // const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
   const fullText =
-    "Welcome to our blog! We're thrilled to have you here. Get ready for exciting insights, helpful tips, and inspiring stories. Let's embark on this journey together!";
+    "Welcome to our blog! It's a pleasure to have you here. Await fascinating revelations, practical advice, and motivational tales. Together, let's go off on this adventure!   ";
 
   useEffect(() => {
     let currentText = "";
