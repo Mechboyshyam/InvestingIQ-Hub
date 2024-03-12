@@ -5,34 +5,44 @@ function BlogCard({ blogs }) {
 
   return (
     <div className="parent main-1 mt-2">
-       <div className="mt-2">
+      <div className="mt-2">
         {/* this text will be in the top of the page which will show always */}
-          <h3 className="text-center title-design">
-            "Welcome aboard our blog! We're delighted to have you join us
-            as we kick off this adventure together. Get ready to dive into
-            intriguing topics and insightful discussions. Let's make this
-            journey one to remember!"
-          </h3>
-          <hr />
-        </div>
+        <h3 className="text-center title-design">
+          "Welcome aboard our blog! We're delighted to have you join us as we
+          kick off this adventure together. Get ready to dive into intriguing
+          topics and insightful discussions. Let's make this journey one to
+          remember!"
+        </h3>
+        <hr />
+      </div>
       <div>
-        {blogs?.map((item) => { 
+        {blogs?.map((item) => {
           return (
             <div key={item?._id}>
               <div>
-          {/* making two dives here for the content and the information  */}
-          <div className="d-flex flex-box text-align">
-            <div className="col-4 text-center content p-3">Content List</div>
-            <div className="col-8 blog">
-              <div className="text-center">
-                <h4 className="text-center title-design-topic ">
-                {item?.title}
-                </h4>
-                <img className="img-fluid"  alt="jpeg" />
-              </div>
-              <hr />
-              <p>
-                <b>{item?.topic[0]}</b>
+                {/* making two dives here for the content and the information  */}
+                <div className="d-flex flex-box text-align">
+                  <div className="col-4 text-center content p-3">
+                    Content List
+                  </div>
+                  <div className="col-8 blog">
+                    <div className="text-center">
+                      <h4 className="text-center title-design-topic ">
+                        {item?.title}
+                      </h4>
+                      <img className="img-fluid" src={item?.img} alt="jpeg" />
+                    </div>
+                    <hr />
+                    <p>
+                      {item.topic.map((d) => {
+                        return (
+                          <div>
+                            <h3>{d.title}</h3>
+                            <p>{d.content}</p>
+                          </div>
+                        );
+                      })}
+                      {/* <b>{item?.topic[0]}</b>
                 <br />
                 {item?.paragraph[0]}
                 <br />
@@ -89,10 +99,11 @@ function BlogCard({ blogs }) {
                     </ul>
                   </li>
                 </ol>
-              </p>
-            </div>
-          </div>
-        </div>
+              */}
+                    </p>
+                  </div>
+                </div>
+              </div>
               <hr />
             </div>
           );

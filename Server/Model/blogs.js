@@ -4,10 +4,10 @@ const blogSchema = new mongoose.Schema({
     type: String,
     required: true 
   },
-  description: {
-    type: String,
-    required: true
-  },
+  // description: {
+  //   type: String,
+  //   required: true
+  // },
   date: {
     type: Date,
     default: Date.now 
@@ -15,12 +15,16 @@ const blogSchema = new mongoose.Schema({
   img : {
     type: String
   },
-  topic: {
-    type : Array
-  },
-  paragraph: {
-    type : Array
-  }, 
+  topic: [
+    {
+      // id : Math.Floor(1000+Math.random()*9000),
+      title : String,
+      content : String
+    }
+  ],
+  // paragraph: {
+  //   type : Array
+  // }, 
   formula: {
     type: String
   },

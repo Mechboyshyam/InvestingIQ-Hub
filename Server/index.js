@@ -29,7 +29,7 @@ app.post("/createBlogs", async (req, res) => {
   try {
     const {
       title,
-      description,
+      // description,
       paragraph,
       topic,
       formula,
@@ -38,7 +38,7 @@ app.post("/createBlogs", async (req, res) => {
     } = req.body;
     const blog = new Blog({
       title,
-      description,
+      // description,
       paragraph,
       topic,
       formula,
