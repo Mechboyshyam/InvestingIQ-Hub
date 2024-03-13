@@ -35,72 +35,24 @@ function BlogCard({ blogs }) {
                     <hr />
                     <p>
                       {item.topic.map((d) => {
+                        console.log("d", d);
                         return (
                           <div>
                             <h3>{d.title}</h3>
-                            <p>{d.content}</p>
+                            <div>
+                              {d.content.map((e) => {
+                                return <p>{e.value}</p>;
+                              })}
+                            </div>
                           </div>
                         );
                       })}
-                      {/* <b>{item?.topic[0]}</b>
-                <br />
-                {item?.paragraph[0]}
-                <br />
-                <span className="formula">
-                  {item?.formula}
-                </span>
-                <br />
-                <br />{item?.paragraph[1]}
-              </p>
-              <p>
-                {item?.paragraph[2]}
-              </p>
-              <p>
-               {item?.topic[1]}
-                <ul>
-                  <li>
-                   {item?.list[0]}
-                  </li>
-                  <li>
-                   {item?.list[1]}
-                  </li>
-                </ul>
-              </p>
-              <hr />
-              <span>
-                <b>
-                  {item?.topic[2]}
-                </b>
-                <ol>
-                  <li>
-                   {item?.list[2]}
-                  </li>
-                  <li>
-                    {item?.list[3]}
-                  </li>
-                </ol>
-              </span>
-              <p>
-                <b>{item?.topic[3]}</b>
-                <ol>
-                  <li>
-                    {item?.list[4]}
-                  </li>
-                  <li>
-                  {item?.list[5]}
-                  </li>
-                  <li>
-                    
-                    <ul>
-                      <li>{item?.list[6]}</li>
-                      <li>{item?.list[7]}</li>
-                      <li>{item?.list[8]}</li>
-                      <li>{item?.list[9]}</li>
-                    </ul>
-                  </li>
-                </ol>
-              */}
                     </p>
+                    <ul>
+                      {item?.list.map((e) => {
+                        return <li>{e.listItem}</li>;
+                      })}
+                    </ul>
                   </div>
                 </div>
               </div>
