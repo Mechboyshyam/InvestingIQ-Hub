@@ -8,7 +8,7 @@ export default function Blog() {
   async function fetchBlogs() {
     // console.log("fetching all blogs");
     try {
-      const response = await axios.get("http://localhost:5000/getBlogs");
+      const response = await axios.get("http://localhost:5000/api/getBlogs");
       console.log("Blogs fetched..", response.data);
       setBlogs(response.data);
     } catch (error) {

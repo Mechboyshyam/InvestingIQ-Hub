@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+.text-justify{
+    text-align:justify ;
+}
+
 .main-1
 {
     border: 1px solid black;
