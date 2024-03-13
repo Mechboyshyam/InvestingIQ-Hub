@@ -6,23 +6,15 @@ const router = express.Router();
 // Create New Blogs
 router.post("/createBlogs", async (req, res) => {
   try {
-    const {
-      title,
-      // description,
-      paragraph,
-      topic,
-      formula,
-      list,
-      img,
-    } = req.body;
+    const { title, img, topic, formula, list, subList } = req.body;
+
     const blog = new Blog({
       title,
-      // description,
-      paragraph,
+      img,
       topic,
       formula,
       list,
-      img,
+      subList,
     });
     const savedBlog = await blog.save();
     res.json(savedBlog);
@@ -69,6 +61,7 @@ router.patch("/blogs/:id", async (req, res) => {
   }
 });
 
+// Delete Blogs
 // Delete a blog post by ID
 router.delete("/blogs/:id", async (req, res) => {
   try {

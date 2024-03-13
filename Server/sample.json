@@ -39,8 +39,8 @@
   ],
   "subList": [
     {
-      "title": "There are some more indexes in the indian stock market:-",
-      "content": [
+      "subListTitle": "There are some more indexes in the indian stock market:-",
+      "subListContent": [
         {
           "subListItem": "BankNifty"
         },
