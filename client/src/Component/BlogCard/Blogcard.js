@@ -18,15 +18,15 @@ function BlogCard({ blogs }) {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-4 text-center content p-3">
+        <div className="col-md-3 text-center content p-3">
           Content List
         </div>
-        <div className="col-md-8">
+        <div className="col-md-9">
           {blogs?.map((item) => (
             <div key={item?._id} className="mb-4">
               <div className="text-center">
-                <h4 className="text-center title-design-topic">{item?.title}</h4>
-                <img className="img-fluid" src={item?.img} alt="Blog Thumbnail" />
+                <h4 className="text-center title-design-topic">{item?.title}</h4> <hr />
+                <img className="img-fluid" src={item?.img} alt="Blog Thumbnail" /> 
               </div>
               <hr />
               <div>
