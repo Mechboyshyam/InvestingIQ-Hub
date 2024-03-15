@@ -57,3 +57,45 @@
     }
   ]
 }
+
+
+{
+  "title": "Start Your Financial Journey: A Beginner's Guide to Stock Market Success.",
+“img”: “https://raw.githubusercontent.com/Mechboyshyam/InvestingIQ-Hub/main/client/src/Images/thinking.jpeg”,
+  "topic": [
+    {
+      "title": "What is share? What is share market?",
+      "content": [
+        {
+          "value": " When we divide a company's capital into small, equal parts, each part is referred to as a share. For example, suppose there is a company named XYZ with a capital of 1000 rupees. If we divide this capital into 100 equal parts with some amount, each part will cost 10 Rs. This single component is known as Share. If you want to know the company's total share capital, multiply it by the share price. I believe you now realize that purchasing shares entails assuming a certain level of ownership in proportion to the number of shares you purchase."
+        },
+        {
+          "value": " Going on to the second question, you know that fruits and vegetables immediately spring to mind when you hear the word market. However, there are a few minor variations in the stock market where stock purchases and sales take place. A market is an area were buying and selling takes place; since stock is traded here, the term "stock market" is used. Thus, to put it simply, a share market is a marketplace where stocks are bought and sold. Buyers and sellers are the two groups of people who matter most in the market."
+        },
+        {
+          "value": " There are no restrictions on who can invest, whether it is a small investor or a large mutual fund, FII (Foreign Institutional Investor) or DII (Domestic Institutional Investor). FIIs are investors in our financial market who are not from the country where the company is registered or headquartered. DII are institutions or groups of investors who prefer to invest in financial assets in the country where they live. DII's investment decisions are influenced by political and economic trends."
+        }
+      ]
+    }
+  ],
+  "subList": [
+    {
+      "subListTitle": " What are the NSE, BSE, and other indices?",
+      "subListContent": [
+        {
+          "subListItem": " NSE: The National Stock Exchange of India is referred to as NSE. With its main office located in Mumbai, it is one of the top stock exchanges in India. The NSE makes it easier to trade a range of financial instruments, such as debt securities, currencies, derivatives, and stocks. In terms of market capitalization and trading volume, NSE has become India's largest stock exchange. It uses an electronic trading platform that makes trading easy and effective for investors all over the nation."
+        },
+        {
+          "subListItem": " BSE: The Bombay Stock Exchange, or BSE, is one of India's biggest and oldest stock exchanges. BSE is a Mumbai-based company that was founded in 1875. Thirty of the biggest and most frequently traded stocks listed on the BSE, representing different sectors of the Indian economy, make up the benchmark index known as the Sensex. The Securities and Exchange Board of India (SEBI), which is the main regulatory body for the Indian securities markets, established the regulatory framework that the BSE operates under."
+        },
+        {
+          "subListItem": " Bank nifty: The Nifty Bank Index, or Bank Nifty, is an indicator that follows the performance of India's banking industry. It consists of the largest and most liquid banking stocks that are traded on the National Stock Exchange (NSE). Major private and public sector banks as well as other financial institutions' stocks are included in the Bank Nifty index."
+        },
+        {
+          "subListItem": " Bank nifty: The Nifty Bank Index, or Bank Nifty, is an indicator that follows the performance of India's banking industry. It consists of the largest and most liquid banking stocks that are traded on the National Stock Exchange (NSE). Major private and public sector banks as well as other financial institutions' stocks are included in the Bank Nifty index."
+        }
+      ]
+    }
+  ]
+}
+
