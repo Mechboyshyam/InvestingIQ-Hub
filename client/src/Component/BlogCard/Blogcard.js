@@ -25,14 +25,14 @@ function BlogCard({ blogs }) {
           {blogs?.map((item) => (
             <div key={item?._id} className="mb-4">
               <div className="text-center">
-                <h4 className="text-center title-design-topic">{item?.title}</h4> <hr />
+                <h3 className="text-center title-design-topic">{item?.title}</h3> <hr />
                 <img className="img-fluid" src={item?.img} alt="Blog Thumbnail" /> 
               </div>
               <hr />
               <div>
                 {item.topic.map((d) => (
                   <div key={d.title}>
-                    <h3>{d.title}</h3>
+                    <h4>{d.title}</h4>
                     <div >
                       {d.content.map((e, index) => (
                         <p className="text-justify" key={index}>{e.value}</p>
@@ -41,11 +41,19 @@ function BlogCard({ blogs }) {
                   </div>
                 ))}
               </div>
-              <ul>
-                {item?.list.map((e, index) => (
-                  <li key={index}>{e.listItem}</li>
+              <div>
+                {item.subList.map((e, index) => (
+                 <div>
+                   <h4 key={index}>{e.subListTitle}</h4>
+                  <p>
+                  {item?.subListContent.map((e,index)=>(
+                  <ul><li key={index}>{e.subListItem}</li></ul>
                 ))}
-              </ul>
+                  </p>
+                 </div>
+                ))}
+                
+              </div>
             </div>
           ))}
         </div>
