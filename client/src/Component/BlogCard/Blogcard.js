@@ -52,6 +52,10 @@ function BlogCard({ blogs }) {
                   </p> */}
                  </div>
                 ))}
+                <div>
+                  {subListContent?.subListItem.map((e,index)=>(
+                  <ul><li key={index}>{e.subListItem}</li></ul>))}
+                </div>
                 
               </div>
             </div>

@@ -775,7 +775,7 @@ export default class Contact extends Component {
   ------------------------------------------------------------> */}
 
           <form>
-            <h1 class="title text-center mb-4">Talk to Us</h1>
+            <h1 class=" text-center mb-4"><b>Talk to Us</b></h1>
 
             {/* <!-- Name --> */}
             <div class="form-group position-relative">
