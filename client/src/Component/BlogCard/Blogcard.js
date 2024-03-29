@@ -5,7 +5,7 @@ function BlogCard({ blogs }) {
   console.log("blogs", blogs);
 
   return (
-    <div className="container">
+    <div className="container parent-border">
       <div className="row">
         <div className="col-12 mt-2">
           {/* This is common title for blog */}
@@ -15,23 +15,23 @@ function BlogCard({ blogs }) {
             topics and insightful discussions. Let's make this journey one to
             remember!
           </h3>
-          <hr />
+          {/* <hr /> */}
         </div>
       </div>
       <div className="row">
-        <div className="col-md-3  content p-3">
+        {/* <div className="col-md-3  content p-3">
           <h2 className="text-center">
             <b>Content List</b> <br />
           </h2>
           {blogs?.map((item) => (
-            <h5 >
+            <h6 >
               <ul>
                 <li><b>{item?.title}</b></li>
               </ul>
-            </h5>
+            </h6>
           ))}
-        </div>
-        <div className="col-md-9">
+        </div> */}
+        <div className="col-md-12">
           {blogs?.map((item) => (
             <div key={item?._id} className="mb-4">
               <div className="text-center">

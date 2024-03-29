@@ -1,7 +1,11 @@
 .parent{
     max-width: 100%;
     margin: auto;
+}.parent-border1{
+    border: 1px solid black;
 }
+
+
 
 .text-justify{
     text-align:justify ;
@@ -39,7 +43,7 @@
 }
 
 .title-design{
-    /* border: 2px solid teal; */
+    border: 2px solid teal;
     border-radius: 10px;
     padding: 5px 5px 5px 5px;
     /* background-color: teal; */
