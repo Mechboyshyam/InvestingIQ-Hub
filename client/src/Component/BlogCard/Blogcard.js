@@ -8,6 +8,7 @@ function BlogCard({ blogs }) {
     <div className="container">
       <div className="row">
         <div className="col-12 mt-2">
+          {/* This is common title for blog */}
           <h3 className="text-center title-design">
             Welcome aboard our blog! We're delighted to have you join us as we
             kick off this adventure together. Get ready to dive into intriguing
@@ -25,8 +26,10 @@ function BlogCard({ blogs }) {
           {blogs?.map((item) => (
             <div key={item?._id} className="mb-4">
               <div className="text-center">
+                {/* title of the blog */}
                 <h3 className="text-center title-design-topic">{item?.title}</h3>
                 <hr />
+                {/* image of that blog */}
                 <img className="img-fluid" src={item?.img} alt="Blog Thumbnail" />
               </div>
               <hr />
@@ -47,6 +50,7 @@ function BlogCard({ blogs }) {
                   <div key={index}>
                     <h4>{subListItem.subListTitle}</h4>
                     <div>
+                      {/* here array is mapped */}
                       <ol>
                         {subListItem.subListContent.map((subListContentItem, subIndex) => (
                           <li key={subIndex}>{subListContentItem.subListItem}</li>
