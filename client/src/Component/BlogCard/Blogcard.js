@@ -19,18 +19,33 @@ function BlogCard({ blogs }) {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-3 text-center content p-3">
-          Content List
+        <div className="col-md-3  content p-3">
+          <h2 className="text-center">
+            <b>Content List</b> <br />
+          </h2>
+          {blogs?.map((item) => (
+            <h5 >
+              <ul>
+                <li><b>{item?.title}</b></li>
+              </ul>
+            </h5>
+          ))}
         </div>
         <div className="col-md-9">
           {blogs?.map((item) => (
             <div key={item?._id} className="mb-4">
               <div className="text-center">
                 {/* title of the blog */}
-                <h3 className="text-center title-design-topic">{item?.title}</h3>
+                <h3 className="text-center title-design-topic">
+                  {item?.title}
+                </h3>
                 <hr />
                 {/* image of that blog */}
-                <img className="img-fluid" src={item?.img} alt="Blog Thumbnail" />
+                <img
+                  className="img-fluid"
+                  src={item?.img}
+                  alt="Blog Thumbnail"
+                />
               </div>
               <hr />
               <div>
@@ -39,7 +54,9 @@ function BlogCard({ blogs }) {
                     <h4>{topic.title}</h4>
                     <div>
                       {topic.content.map((contentItem, index) => (
-                        <p className="text-justify" key={index}>{contentItem.value}</p>
+                        <p className="text-justify" key={index}>
+                          {contentItem.value}
+                        </p>
                       ))}
                     </div>
                   </div>
@@ -52,9 +69,13 @@ function BlogCard({ blogs }) {
                     <div>
                       {/* here array is mapped */}
                       <ol>
-                        {subListItem.subListContent.map((subListContentItem, subIndex) => (
-                          <li key={subIndex}>{subListContentItem.subListItem}</li>
-                        ))}
+                        {subListItem.subListContent.map(
+                          (subListContentItem, subIndex) => (
+                            <li key={subIndex}>
+                              {subListContentItem.subListItem}
+                            </li>
+                          )
+                        )}
                       </ol>
                     </div>
                   </div>
