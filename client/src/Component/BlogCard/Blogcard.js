@@ -25,38 +25,36 @@ function BlogCard({ blogs }) {
           {blogs?.map((item) => (
             <div key={item?._id} className="mb-4">
               <div className="text-center">
-                <h3 className="text-center title-design-topic">{item?.title}</h3> <hr />
-                <img className="img-fluid" src={item?.img} alt="Blog Thumbnail" /> 
+                <h3 className="text-center title-design-topic">{item?.title}</h3>
+                <hr />
+                <img className="img-fluid" src={item?.img} alt="Blog Thumbnail" />
               </div>
               <hr />
               <div>
-                {item.topic.map((d) => (
-                  <div key={d.title}>
-                    <h4>{d.title}</h4>
-                    <div >
-                      {d.content.map((e, index) => (
-                        <p className="text-justify" key={index}>{e.value}</p>
+                {item.topic.map((topic) => (
+                  <div key={topic.title}>
+                    <h4>{topic.title}</h4>
+                    <div>
+                      {topic.content.map((contentItem, index) => (
+                        <p className="text-justify" key={index}>{contentItem.value}</p>
                       ))}
                     </div>
                   </div>
                 ))}
               </div>
               <div>
-                {item.subList.map((e, index) => (
-                 <div>
-                   <h4 key={index}>{e.subListTitle}</h4>
-                  {/* <p>
-                  {item?.subListContent.map((e,index)=>(
-                  <ul><li key={index}>{e.subListItem}</li></ul>
+                {item.subList.map((subListItem, index) => (
+                  <div key={index}>
+                    <h4>{subListItem.subListTitle}</h4>
+                    <div>
+                      <ol>
+                        {subListItem.subListContent.map((subListContentItem, subIndex) => (
+                          <li key={subIndex}>{subListContentItem.subListItem}</li>
+                        ))}
+                      </ol>
+                    </div>
+                  </div>
                 ))}
-                  </p> */}
-                 </div>
-                ))}
-                <div>
-                  {subListContent?.subListItem.map((e,index)=>(
-                  <ul><li key={index}>{e.subListItem}</li></ul>))}
-                </div>
-                
               </div>
             </div>
           ))}
