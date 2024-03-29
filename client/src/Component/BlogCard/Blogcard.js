@@ -19,7 +19,7 @@ function BlogCard({ blogs }) {
         </div>
       </div>
       <div className="row">
-        {/* <div className="col-md-3  content p-3">
+        <div className="col-md-3  content p-3">
           <h2 className="text-center">
             <b>Content List</b> <br />
           </h2>
@@ -30,8 +30,8 @@ function BlogCard({ blogs }) {
               </ul>
             </h6>
           ))}
-        </div> */}
-        <div className="col-md-12">
+        </div>
+        <div className="col-md-9">
           {blogs?.map((item) => (
             <div key={item?._id} className="mb-4">
               <div className="text-center">
