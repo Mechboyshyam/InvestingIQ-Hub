@@ -774,52 +774,50 @@ export default class Contact extends Component {
   -------------------------------------------------------------
   ------------------------------------------------------------> */}
 
-          <form>
-            <h1 class=" text-center mb-4"><b>Talk to Us</b></h1>
+<form>
+  <h1 class="text-center mb-5">Talk to Us</h1>
 
-            {/* <!-- Name --> */}
-            <div class="form-group position-relative">
-              <label for="formName" class="d-block">
-                <i class="icon" data-feather="user"></i>
-              </label>
-              <input
-                type="text"
-                id="formName"
-                class="form-control form-control-lg thick"
-                placeholder="Name"
-              />
-            </div>
+  {/* <-- Name --> */}
+  <div class="form-group position-relative">
+    <label for="formName" class="d-block">
+      <i class="bi bi-person"></i>
+    </label>
+    <input
+      type="text"
+      id="formName"
+      class="form-control form-control-lg"
+      placeholder="Name"
+    />
+  </div>
 
-            {/* <!-- E-mail --> */}
-            <div class="form-group position-relative">
-              <label for="formEmail" class="d-block">
-                <i class="icon" data-feather="mail"></i>
-              </label>
-              <input
-                type="email"
-                id="formEmail"
-                class="form-control form-control-lg thick"
-                placeholder="E-mail"
-              />
-            </div>
+  {/* <-- E-mail --> */}
+  <div class="form-group mt-2 position-relative">
+    <label for="formEmail" class="d-block">
+      <i class="bi bi-envelope"></i>
+    </label>
+    <input
+      type="email"
+      id="formEmail"
+      class="form-control form-control-lg"
+      placeholder="E-mail"
+    />
+  </div>
 
-            {/* <!-- Message --> */}
-            <div class="form-group message">
-              <textarea
-                id="formMessage"
-                class="form-control form-control-md"
-                rows="7"
-                placeholder="Write Something..."
-              ></textarea>
-            </div>
+  {/* <-- Message --> */}
+  <div class="form-group mt-2">
+    <textarea
+      id="formMessage"
+      class="form-control"
+      rows="8"
+      placeholder="Write Something..."
+    ></textarea>
+  </div>
 
-            {/* <!-- Submit btn --> */}
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary" tabIndex="-1">
-                Send message
-              </button>
-            </div>
-          </form>
+  {/* <-- Submit btn  */}
+  <div class="text-center mt-2">
+    <button type="submit" class="btn btn-primary">Send message</button>
+  </div>
+</form>
         </div>
       </div>
     );

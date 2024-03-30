@@ -23,7 +23,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="" className="text-decoration-none text-light ms-3 fs-5 fw-semibold btn">
+                <Link to="" className="text-decoration-none text-light ms-1 fs-5 fw-semibold btn">
                   Home
                 </Link>
               </li>
