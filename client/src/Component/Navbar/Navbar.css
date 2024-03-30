@@ -1,53 +1,9 @@
-
-nav {
-    background-color: #5cb1d7 !important;
+.nav-color{
+    background: #5cb1d7 !important;
+    padding: 2px;
 }
 
-.bold {
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.font-size{
-    font-weight: 700 !important;
-    font-size: 17px;
-}
-
-.border-bold {
-    border: 1px solid white !important;
-    color: white;
-}
-
-.contact{
-    background-color: #11abba;
-    border: none !important;
-}
-
-.contact:hover{
-    background-color: #11abba;
-    text-decoration: none;
-    color: white;
-}
-
-.text-decoration:hover{
-    text-decoration: none;
-}
-
-
-@media (min-width:736px) {
-    /* .main_nav {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    } */
-
-    /* .main_nav {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-        border: 2px solid red;
-    } */
-    .nav_items {
-        display: flex !important;
-        flex-direction: row;
-        /* border: 2px solid red; */
-    }
+.search-box{
+    width: 18rem !important;
+    
 }
