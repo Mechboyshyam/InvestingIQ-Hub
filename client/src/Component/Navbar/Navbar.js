@@ -59,17 +59,13 @@ export default  function Navbar() {
               </span> */}
             </div>
             <div className="col-4 ">
-              {/* <form className="form-inline search-box my-2 my-lg-0">
+              <form className="form-inline search-box my-2 my-lg-0">
                 <input
                   className="form-control mr-sm-2 text-center border-bold"
                   type="search"
-                  placeholder="Search the content"
+                  placeholder="Search here..."
                   aria-label="Search"
                 />
-              </form> */}
-              <form className="search-boxx">
-                <input type="text" placeholder="" />
-                <button type="reset"></button>
               </form>
             </div>
           </div>

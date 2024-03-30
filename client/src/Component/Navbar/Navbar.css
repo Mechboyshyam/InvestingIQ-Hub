@@ -1,10 +1,7 @@
 
-
 nav {
     background-color: #5cb1d7 !important;
 }
-
-
 
 .bold {
     font-weight: bold;
@@ -20,11 +17,6 @@ nav {
     border: 1px solid white !important;
     color: white;
 }
-
-/* .border-bold:hover{
-    background-color: #11abba;
-    pointer-events: painted;
-} */
 
 .contact{
     background-color: #11abba;
