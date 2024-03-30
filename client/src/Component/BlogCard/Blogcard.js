@@ -63,6 +63,7 @@ function BlogCard({ blogs }) {
                 ))}
               </div>
               <div>
+                {/* title of array */}
                 {item.subList.map((subListItem, index) => (
                   <div key={index}>
                     <h4>{subListItem.subListTitle}</h4>
