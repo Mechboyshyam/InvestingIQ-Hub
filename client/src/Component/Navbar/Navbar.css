@@ -4,6 +4,11 @@
     height: 4rem;
 }
 
+.bgTeal{
+    background: #5cb1d7 !important;
+    border: 0px solid #5cb1d7;
+}
+
 .search-box{
     width: 18rem !important;
     

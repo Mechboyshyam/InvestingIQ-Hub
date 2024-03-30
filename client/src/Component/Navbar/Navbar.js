@@ -32,55 +32,44 @@ function Navbar() {
             Blogs
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link to="about" className="text-decoration-none text-light ms-1 fs-5 fw-semibold btn">
+
+              <li>
+                  <Link to="about" className="text-decoration-none text-light ms-1 fs-5 fw-semibold btn">
                     About
                   </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="contact" className="text-decoration-none text-light ms-1 fs-5 fw-semibold btn">
-                    Contact
-                  </Link>
-                </li>
+                  </li>
+              
               {/* <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-decoration-none text-light ms-1 fs-5 fw-semibold btn "
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  More
                 </a>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu bgTeal">
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
+                  <Link to="about" className="text-decoration-none text-light ms-1 fs-5 fw-semibold btn">
+                    About
+                  </Link>
                   </li>
                 </ul>
               </li> */}
             </ul>
-            <form className="" role="search">
+            <form className="d-flex" role="search">
               <input
                 className="form-control me-2 text-center search-box"
                 type="search"
                 placeholder="Search here..."
                 aria-label="Search"
               />
+              <span>
+              <Link to="contact" className="text-decoration-none text-light ms-1 fs-5 fw-semibold btn">
+                    Contact
+                  </Link>
+              </span>
             </form>
           </div>
         </div>
