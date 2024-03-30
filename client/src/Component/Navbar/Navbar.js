@@ -59,19 +59,17 @@ export default  function Navbar() {
               </span> */}
             </div>
             <div className="col-4 ">
-              <form className="form-inline search-box my-2 my-lg-0">
+              {/* <form className="form-inline search-box my-2 my-lg-0">
                 <input
                   className="form-control mr-sm-2 text-center border-bold"
                   type="search"
                   placeholder="Search the content"
                   aria-label="Search"
                 />
-                {/* <button
-                className="contact hover-eff-btn bold my-2 my-sm-0"
-                type="submit"
-              >
-                <a href="/contact" className="text-decoration-none contact text-light">Contact</a>
-              </button> */}
+              </form> */}
+              <form className="search-boxx">
+                <input type="text" placeholder="" />
+                <button type="reset"></button>
               </form>
             </div>
           </div>
