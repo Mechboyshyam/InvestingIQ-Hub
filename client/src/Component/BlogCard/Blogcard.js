@@ -33,7 +33,7 @@ function BlogCard({ blogs }) {
         </div>
         <div className="col-md-9">
           {blogs?.map((item) => (
-            <div key={item?._id} className="mb-4">
+            <div key={item?._id} className="mb-4 blog-border">
               <div className="text-center">
                 {/* title of the blog */}
                 <h3 className="text-center title-design-topic">
