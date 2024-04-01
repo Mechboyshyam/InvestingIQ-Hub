@@ -4,6 +4,10 @@
     height: 4rem;
 }
 
+.collapse{
+    background-color: #5cb1d7 !important;
+}
+
 .bgTeal{
     background: #5cb1d7 !important;
     border: 0px solid #5cb1d7;

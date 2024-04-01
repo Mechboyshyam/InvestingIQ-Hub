@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./BlogCard.css";
 
 function BlogCard({ blogs }) {
-  const [selectedContent, setSelectedContent] = useState(0); // Initialize with the index of the first blog
+  // Initialize with the index of the first blog
+  const [selectedContent, setSelectedContent] = useState(0); 
 
   const handleContentClick = (index) => {
     setSelectedContent(index === selectedContent ? null : index);
@@ -11,19 +12,20 @@ function BlogCard({ blogs }) {
   useEffect(() => {
     // Ensure first blog is displayed on component mount
     setSelectedContent(0);
-  }, []); // Empty dependency array ensures the effect runs only once on mount
+  }, []); 
+  // Empty dependency array ensures the effect runs only once on mount
 
   return (
     <div className="container parent-border">
       <div className="row">
-        <div className="col-12 mt-2">
+        {/* <div className="col-12 mt-2">
           <h3 className="text-center title-design">
             Welcome aboard our blog! We're delighted to have you join us as we
             kick off this adventure together. Get ready to dive into intriguing
             topics and insightful discussions. Let's make this journey one to
             remember!
           </h3>
-        </div>
+        </div> */}
       </div>
       <div className="row">
         <div className="col-md-3 content p-3">
