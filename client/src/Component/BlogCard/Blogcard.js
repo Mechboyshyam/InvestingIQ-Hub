@@ -3,7 +3,7 @@ import "./BlogCard.css";
 
 function BlogCard({ blogs }) {
   // Initialize with the index of the first blog
-  const [selectedContent, setSelectedContent] = useState(0); 
+  const [selectedContent, setSelectedContent] = useState(0);
 
   const handleContentClick = (index) => {
     setSelectedContent(index === selectedContent ? null : index);
@@ -12,28 +12,35 @@ function BlogCard({ blogs }) {
   useEffect(() => {
     // Ensure first blog is displayed on component mount
     setSelectedContent(0);
-  }, []); 
+  }, []);
   // Empty dependency array ensures the effect runs only once on mount
 
   return (
     <div className="container parent-border">
       <div className="row">
-        {/* <div className="col-12 mt-2">
+        <div className="col-12 mt-2">
           <h3 className="text-center title-design">
-            Welcome aboard our blog! We're delighted to have you join us as we
-            kick off this adventure together. Get ready to dive into intriguing
-            topics and insightful discussions. Let's make this journey one to
-            remember!
+            "Welcome to our blog! We're glad you're here as we start this
+            journey together. Get ready for interesting topics and great
+            discussions. Let's make this journey memorable!"
           </h3>
-        </div> */}
-      </div>
+        </div>
+      </div> <hr />
       <div className="row">
         <div className="col-md-3 content p-3">
           <h2 className="text-center">
             <b>Content List</b> <br />
           </h2>
           {blogs?.map((item, index) => (
-            <h6 key={index} onClick={() => handleContentClick(index)} style={{ cursor: 'pointer', textDecoration: 'none', color: selectedContent === index ? 'blue' : 'black' }}>
+            <h6
+              key={index}
+              onClick={() => handleContentClick(index)}
+              style={{
+                cursor: "pointer",
+                textDecoration: "none",
+                color: selectedContent === index ? "blue" : "black",
+              }}
+            >
               <ul>
                 <li>
                   <b>{item.title}</b>
